@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .grid {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1600px;
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;

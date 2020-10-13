@@ -1,0 +1,55 @@
+//Taka prufudraslið í burtu
+
+.prufa {
+  background-color: #FAFAFA;
+}
+
+.uppskrift-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  margin-bottom: 20px;
+}
+
+.video-uppskrift-box {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  margin-bottom: 20px;
+}
+.mynd-uppskrift-box {
+  display: flex;
+  height: 290px;
+}
+
+.mynd-video-uppskrift-box {
+  display: flex;
+  height: 230px;
+}
+.rammi {
+  object-fit: cover;
+  width: 100%;
+}
+
+.manudur {
+  margin-top: 25px;
+  margin-left: 24px;
+  height: 23px;
+}
+
+.ucard-titill {
+  height: 30px;
+}
+.titill-hlekkur {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.hlekkur {
+  padding-right: 26px;
+  padding-top: 5px;
+}
