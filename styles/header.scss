@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 55px;
+}
+
+.valmynd {
+  @media (max-width: 800px){
+    display: none;
+  }
+}
+
+.hamburger.menu {
+  display:none;
+  height: 100vmax;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-item {
+  align-items: center;
+  font-size: 90px;
+  background-color: lightgray;
+  margin-bottom: 1px;
+  height: 25vmax;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.hamburger {
+  display: none;
+    @media (max-width: 800px){
+      display: inherit;
+  }
+  &:focus {
+    .hamburgermenu {
+      display: flex;
+    }
+    .menu-item {
+      display: flex;
+    }
+  }
+}
+
+.valhlekkir {
+ padding-left: 10px;
+ padding-right: 10px;
+}
