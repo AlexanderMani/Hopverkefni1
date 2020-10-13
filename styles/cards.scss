@@ -4,6 +4,16 @@
   background-color: #FAFAFA;
 }
 
+@media (max-width: 800px){
+  .uppskrift-titill,
+  .video-uppskrift-titill {
+    font-size: 18px;
+  }
+  .hlekkur-readmore,
+  .hlekkur-see {
+    font-size: 14px;
+  }
+}
 .uppskrift-box {
   background-color: white;
   display: flex;
@@ -39,7 +49,7 @@
   height: 23px;
 }
 
-.ucard-titill {
+.uppskrift-titill {
   height: 30px;
 }
 .titill-hlekkur {
@@ -49,7 +59,12 @@
   margin-left: 24px;
 }
 
-.hlekkur {
+.hlekkur-readmore {
+  padding-right: 26px;
+  padding-top: 5px;
+}
+
+.hlekkur-see {
   padding-right: 26px;
   padding-top: 5px;
 }

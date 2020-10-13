@@ -38,21 +38,6 @@
 
 @media (max-width: 800px) {
 	@for $i from 1 through 12 {
-		.col-m-#{$i} {
-			width: percentage($i / 12);
-		}
-	}
-
-	@for $i from 1 through 2 {
-		.offset-col-m-#{$i} {
-			margin-left: percentage($i / 12);
-			margin-right: percentage($i / 12);
-		}
-	}
-}
-
-@media (max-width: 500px) {
-	@for $i from 1 through 12 {
 		.col-s-#{$i} {
 			width: percentage($i / 12);
 		}
