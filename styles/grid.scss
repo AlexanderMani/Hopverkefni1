@@ -1,0 +1,62 @@
+.grid {
+	margin: 0 auto;
+	max-width: 1200px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -(20px / 2);
+  margin-right: -(20px / 2);
+}
+
+.col {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: percentage($i / 12);
+	}
+}
+
+@for $i from 1 through 6 {
+	.offset-col-#{$i} {
+		margin-left: percentage($i / 12);
+		margin-right: percentage($i /12);
+	}
+}
+
+@media (max-width: 800px) {
+	@for $i from 1 through 12 {
+		.col-m-#{$i} {
+			width: percentage($i / 12);
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.offset-col-m-#{$i} {
+			margin-left: percentage($i / 12);
+			margin-right: percentage($i / 12);
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	@for $i from 1 through 12 {
+		.col-s-#{$i} {
+			width: percentage($i / 12);
+		}
+	}
+
+	@for $i from 1 through 2 {
+		.offset-col-s-#{$i} {
+			margin-left: percentage($i / 12);
+			margin-right: percentage($i /12);
+		}
+	}
+}
