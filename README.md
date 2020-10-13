@@ -1,2 +1,2 @@
 # Hopverkefni1
-Hopverkefni eftir Alexander, Árna, Tinnu og Ingibjörg
+Hopverkefni eftir Alexander, Árna, Tinnu og Ingibjörgu
