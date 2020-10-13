@@ -1,0 +1,15 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hopverkefni1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  }
+}
