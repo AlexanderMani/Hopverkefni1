@@ -1,0 +1,61 @@
+// reset
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    font-weight: 700;
+    //color: #D0D0D0 eða #000
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+
+// þetta er notað fyrir ofan sumt h1 og h2, og fyrir read more ofl
+// kannski breyta þessu úr h6 yfir í class
+h6 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    //color: #E3CDB1;
+
+}
+
+p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    //color: #5E5B69;
+}
+
+a {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+
+}
+
+li {
+    list-style-type: none;
+}
