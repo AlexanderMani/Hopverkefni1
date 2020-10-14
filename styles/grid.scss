@@ -36,7 +36,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1150px) {
 	@for $i from 1 through 12 {
 		.col-s-#{$i} {
 			width: percentage($i / 12);
