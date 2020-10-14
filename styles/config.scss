@@ -1,0 +1,31 @@
+// Hér eiga að vera stillingar með scss breytum fyrir:
+// grid, max-width á síðu, transitions,
+// liti, margin-bottom gildi sem eru sameiginleg
+
+
+
+$max-width: 1600px;
+$gutter: 20px;
+$offset: -20px;
+
+
+//Litir
+
+$black: #000;
+$grey: #999;
+$light-grey:#FAFAFA;
+$light-beige: #F7F1EB;
+$white: #FFFFFF;
+$brown: #F7F1EB;
+
+// Letur og icon litir aðrir en svart og hvítt
+
+$beige: #E3CDB1;
+$light-grey-text:#D0D0D0;
+$grey-text:#5E5B69;
+
+
+
+// button transition
+
+$transition: background-color 2s ease-out;
