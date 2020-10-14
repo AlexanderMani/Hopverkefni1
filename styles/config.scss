@@ -8,7 +8,12 @@ $max-width: 1600px;
 $gutter: 20px;
 $offset: -20px;
 
+//Letur stærð í em, 1em is 18px,
 
+$size-0: 0.77em;  // 14px
+$size-1: 1em;     // 18px meginmal
+$size-2: 2.22em;  // 40px
+$size-3: 3.33em;  // 60px
 //Litir
 
 $black: #000;
@@ -23,8 +28,6 @@ $brown: #F7F1EB;
 $beige: #E3CDB1;
 $light-grey-text:#D0D0D0;
 $grey-text:#5E5B69;
-
-
 
 // button transition
 
