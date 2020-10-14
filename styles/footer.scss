@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 336px;
+  margin-top: auto;
+  position:fixed;
+  bottom: 0;
+  width: 78%;
+}
+
+.midja {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+}
