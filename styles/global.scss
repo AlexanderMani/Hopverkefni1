@@ -2,23 +2,28 @@
 
 // reset
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-family: 'Playfair Display';
-    font-size: $size-5;
-    font-weight: 700;
-    color: #000;
+  font-family: 'Playfair Display';
+  font-size: $size-5;
+  font-weight: 700;
+  color: #000;
+  /*@media mobilestærð {
+    align: center;
+    font-size: 32px;
+    line-height: 42.66px;
+  } */
 }
 
 h2 {
-    font-family: 'Playfair Display';
-    font-size: $size-4;
-    font-weight: 700;
-    //color: #D0D0D0 eða #000
+  font-family: 'Playfair Display';
+  font-size: $size-4;
+  font-weight: 700;
+  //color: #D0D0D0 eða #000
 }
 
 h3 {
@@ -39,40 +44,49 @@ h4 {
 // þetta er notað fyrir ofan sumt h1 og h2, og fyrir read more ofl
 // kannski breyta þessu úr h6 yfir í class
 h6 {
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: $size-2;
-    line-height: 24px;
-    color: $beige;
-
-}
-
-p {
-    font-family: Poppins;
-    font-size: $size-3;
-    font-weight: 300;
-    color: $grey-text;
-}
-
-a {
-    color: $beige;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: $size-2;
-    line-height: 24px;
-}
-
-a:visited {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: $size-2;
+  line-height: 24px;
   color: $beige;
 
 }
 
-button {
-    border: 1px solid $beige;
-    height: 52px;
-    width: 250px;
+p {
+  font-family: Poppins;
+  font-size: $size-3;
+  font-weight: 300;
+  color: $grey-text;
 }
 
+a {
+  background-color: $light-grey;
+  color: $beige;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: $size-2;
+  line-height: 24px;
+}
+
+button {
+  border: 1px solid $beige;
+  height: 52px;
+  width: 250px;
+}
+
+button:hover,
+button:hover a {
+  background-color: $beige;
+  color: $light-grey;
+}
+
+button:focus,
+button:focus a {
+  background-color: $light-grey;
+  color: $beige;
+}
+
+//dæmi um hvernig button gæti verið í footer
 .sub-button {
   background-color: $black; //eða kannski transparent bara
   color: $beige;
@@ -80,5 +94,5 @@ button {
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
