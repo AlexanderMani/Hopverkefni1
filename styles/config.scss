@@ -7,16 +7,16 @@
 $max-width: 1600px;
 $gutter: 20px;
 $offset: 10px;
-$breakpoint: 1150px
+$breakpoint: 1150px;
 
 //Letur stærð í em, 1em is 18px,
 
-$size-0: 0.77em;  // 14px
-$size-1:          // 15px
-$size-2:
-$size-3: 1em;     // 18px - meginmal
-$size-4: 2.22em;  // 40px
-$size-5: 3.33em;  // 60px
+$size-0: 0.77em;    // 14px   Setti inn size 1 og 2 svo ég gæti importað config í global
+$size-1: 0.83333em; // 15px     kv Ingibjörg
+$size-2: 0.88888em; // 16px
+$size-3: 1em;       // 18px - meginmal
+$size-4: 2.22em;    // 40px
+$size-5: 3.33em;    // 60px
 
 //Mobile
       //12px Line height 18px - Date on recipe card / email text on footer / *go to store button
