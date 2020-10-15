@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-size: $size-5;
   font-weight: 700;
   color: #000;
@@ -20,21 +20,21 @@ h1 {
 }
 
 h2 {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
   font-size: $size-4;
   font-weight: 700;
   //color: #D0D0D0 eða #000
 }
 
 h3 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: $size-0;
   font-weight: 300;
   line-height: 21px;
 }
 
 h4 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-size: $size-3;
   font-weight: 400;
   line-height: 17px;
@@ -44,7 +44,7 @@ h4 {
 // þetta er notað fyrir ofan sumt h1 og h2, og fyrir read more ofl
 // kannski breyta þessu úr h6 yfir í class
 h6 {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: $size-2;
   line-height: 24px;
@@ -53,7 +53,7 @@ h6 {
 }
 
 p {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: $size-3;
   font-weight: 300;
   color: $grey-text;
@@ -62,7 +62,7 @@ p {
 a {
   background-color: $light-grey;
   color: $beige;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: $size-2;
   line-height: 24px;
