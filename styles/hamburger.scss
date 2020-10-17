@@ -1,0 +1,42 @@
+@import 'config';
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+    @media (max-width: 800px){
+      display: inherit;
+  }
+  &:focus {
+    .hamburgermenu {
+      display: flex;
+    }
+    .menu-item {
+      display: flex;
+    }
+  }
+}
+.burger {
+  position: fixed;
+  right: $offset;
+  padding-top: $offset/3;
+}
+
+.x {
+  position: fixed;
+  right: $offset+2.5px;
+  padding-top: $offset/3-1px;
+  display: none;
+  &.burger:target {
+    display: flex;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  &:checked {
+    max-height: 100vmax;
+    height: 100vmax;
+  }
+  flex-direction: column;
+  justify-content: space-evenly;
+}

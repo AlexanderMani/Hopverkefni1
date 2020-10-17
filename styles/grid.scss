@@ -2,18 +2,20 @@
 
 .grid {
   margin: 0 auto;
-	max-width: $grid-max+$gutter;
+	max-width: $grid-max;
 	overflow: hidden;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -$offset;
+  margin-left: -$offset;
 }
 
 .col {
 	padding-left: $offset;
-	padding-right: $offset;
+  padding-right: $offset;
 }
 
 @for $i from 1 through 12 {

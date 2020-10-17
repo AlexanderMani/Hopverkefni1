@@ -3,7 +3,8 @@
 .hoffset {
   position: fixed;
   margin-top: 15px;
-  width: $grid-max;
+  max-width: $grid-max;
+  width: 100%;
 }
 
 .header {
@@ -13,49 +14,16 @@
   height: 80px;
   padding-top: 28px;;
   padding-bottom: 27px;
+  z-index: 3;
 }
 
 .valmynd {
-  margin-right: -5px;
   @media (max-width: $breakpoint){
     display: none;
   }
 }
 
-.hamburger.menu {
-  display:none;
-  height: 100vmax;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.menu-item {
-  align-items: center;
-  font-size: 90px;
-  background-color: lightgray;
-  margin-bottom: 1px;
-  height: 25vmax;
-  text-align: center;
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-}
-.hamburger {
-  display: none;
-    @media (max-width: 800px){
-      display: inherit;
-  }
-  &:focus {
-    .hamburgermenu {
-      display: flex;
-    }
-    .menu-item {
-      display: flex;
-    }
-  }
-}
 
 .valhlekkir {
- padding-right: 26px;
+ padding-left: 26px;
 }

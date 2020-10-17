@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+main {
+  padding-left: $offset;
+  padding-right: $offset;
+}
+
 //Main heading á síðunni
 .h {
   font-family: 'Playfair Display', serif;
@@ -121,6 +126,18 @@
   font-weight: $thin;
   line-height: $lheight-0;
   color: $beige-grey-text;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: underline;
+  }
   @media (max-width: $breakpoint) {
     align: center;
     color: $black;
