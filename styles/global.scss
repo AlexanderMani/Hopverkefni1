@@ -1,4 +1,4 @@
-@import 'styles/config.scss';
+@import 'styles/config';
 
 // reset
 * {
@@ -7,65 +7,146 @@
   padding: 0;
 }
 
-h1 {
+//Main heading á síðunni
+.h {
   font-family: 'Playfair Display', serif;
-  font-size: $size-5;
-  font-weight: 700;
-  color: #000;
-  /*@media mobilestærð {
+  font-size: $size-60;
+  font-weight: $thick;
+  color: $black;
+  line-height: $size-80;
+  @media (max-width: $breakpoint) {
     align: center;
-    font-size: 32px;
-    line-height: 42.66px;
-  } */
+    font-size: $size-32;
+    line-height: $size-43;
+  }
 }
 
-h2 {
+//Section heading
+.sectionh {
   font-family: 'Playfair Display', serif;
-  font-size: $size-4;
-  font-weight: 700;
-  //color: #D0D0D0 eða #000
+  font-size: $size-40;
+  line-height: $lheight-40;
+  font-weight: $thick;
+  color: $black;
+  @media (max-width: $breakpoint) {
+    align: center;
+    font-size: $size-20;
+    line-height: $lheight-20;
+  }
 }
 
-h3 {
+//Newsletter heading - The Method
+.newsletterh {
   font-family: 'Poppins', sans-serif;
-  font-size: $size-0;
-  font-weight: 300;
-  line-height: 21px;
+  font-size: $size-40;
+  line-height: 1.5;
+  font-weight: $thick;
+  color: $white;
+  @media (max-width: $breakpoint) {
+    align: center;
+    font-size: $size-20;
+    line-height: $lheight-20;
+  }
 }
 
-h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: $size-3;
-  font-weight: 400;
-  line-height: 17px;
+//Card heading - input text
+.cardh {
+  font-family: 'Playfair Display', serif;
+  font-size: $size-22;
+  line-height: $lheight-22;
+  font-weight: $thick;
+  color: $black;
+  @media (max-width: $breakpoint) {
+    font-size: $size-18;
+    line-height: $lheight-18m;
+  }
 }
 
-
-// þetta er notað fyrir ofan sumt h1 og h2, og fyrir read more ofl
-// kannski breyta þessu úr h6 yfir í class
-h6 {
+//Meginmál
+.p {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: $size-2;
-  line-height: 24px;
-  color: $beige;
-
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: $size-3;
-  font-weight: 300;
+  font-size: $size-18;
+  line-height: $lheight-0;
+  font-weight: $super-thin;
   color: $grey-text;
+  @media (max-width: $breakpoint) {
+    font-size: $size-15;
+    line-height: $lheight-15;
+  }
+}
+
+//Ingredients
+.ingredients {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $super-thin;
+  font-size: $size-18;
+  line-height: $size-18d2;
+  color: $beige-grey-text;
+  @media (max-width: $breakpoint) {
+    font-size: $size-16;
+  }
+}
+
+//Ingredients number
+.inumber {
+  font-family: 'Playfair Display', serif;
+  font-size: $size-36;
+  font-weight: $thick;
+  line-height: $lheight-36;
+  color: $beige;
+  @media (max-width: $breakpoint) {
+    font-size: $size-32;
+    line-height: $lheight-32-2;
+  }
+}
+
+//Newsletter - Craving more?
+.n-c {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-16;
+  font-weight: $normal;
+  line-height: $lheight-0;
+  color: $beige;
+  @media (max-width: $breakpoint) {
+    align: center;
+    font-size: $size-12;
+    line-height: $lheight-0;
+  }
+}
+
+//Navigation items í header
+.navi {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-15;
+  font-weight: $thin;
+  line-height: $lheight-0;
+  color: $beige-grey-text;
+  @media (max-width: $breakpoint) {
+    align: center;
+    color: $black;
+    font-size: $size-60;
+    line-height: $lheight-0;
+  }
+}
+
+//footer smá letrið linkur
+.link {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-14;
+  font-weight: $super-thin;
+  line-height: $lheight-0;
+  color: $light-grey-text;
 }
 
 a {
+  align-content: center;
   background-color: $light-grey;
   color: $beige;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: $size-2;
-  line-height: 24px;
+  font-weight: $normal;
+  font-size: $size-16;
+  line-height: $lheight-0;
+
 }
 
 button {
