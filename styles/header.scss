@@ -7,7 +7,7 @@
 }
 
 .valmynd {
-  @media (max-width: 800px){
+  @media (max-width: $breakpoint){
     display: none;
   }
 }
