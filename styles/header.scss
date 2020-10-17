@@ -1,12 +1,22 @@
+@import 'styles/config';
+
+.hoffset {
+  position: fixed;
+  margin-top: 15px;
+  width: $grid-max;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  height: 80px;
+  padding-top: 28px;;
+  padding-bottom: 27px;
 }
 
 .valmynd {
+  margin-right: -5px;
   @media (max-width: $breakpoint){
     display: none;
   }
@@ -47,6 +57,5 @@
 }
 
 .valhlekkir {
- padding-left: 10px;
- padding-right: 10px;
+ padding-right: 26px;
 }

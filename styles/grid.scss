@@ -1,18 +1,14 @@
 @import 'styles/config';
 
 .grid {
-	margin: 0 auto;
-	max-width: $grid-max;
+  margin: 0 auto;
+	max-width: $grid-max+$gutter;
 	overflow: hidden;
-	padding-left: $offset;
-	padding-right: $offset;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -($offset);
-  margin-right: -($offset);
 }
 
 .col {
@@ -33,7 +29,7 @@
 	}
 }
 
-@media (max-width: 1150px) {
+@media (max-width: $breakpoint) {
 	@for $i from 1 through 12 {
 		.col-s-#{$i} {
 			width: percentage($i / 12);

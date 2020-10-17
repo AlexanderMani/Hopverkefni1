@@ -129,8 +129,8 @@
   }
 }
 
-//footer smá letrið linkur
-.link {
+//months on cards and footer link
+.monthlink {
   font-family: 'Poppins', sans-serif;
   font-size: $size-14;
   font-weight: $super-thin;
@@ -138,14 +138,25 @@
   color: $light-grey-text;
 }
 
-a {
+.takki {
   align-content: center;
-  background-color: $light-grey;
   color: $beige;
   font-family: 'Poppins', sans-serif;
   font-weight: $normal;
   font-size: $size-16;
   line-height: $lheight-0;
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    text-decoration: underline;
+  }
 
 }
 
