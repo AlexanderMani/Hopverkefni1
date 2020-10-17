@@ -7,10 +7,16 @@
   padding: 0;
 }
 
+body {
+  z-index: 3;
+}
+
 main {
   padding-left: $offset;
   padding-right: $offset;
+  padding-top: 80px;
 }
+
 
 //Main heading á síðunni
 .h {
@@ -42,7 +48,7 @@ main {
 
 //Newsletter heading - The Method
 .newsletterh {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: $size-40;
   line-height: 1.5;
   font-weight: $thick;
@@ -61,6 +67,18 @@ main {
   line-height: $lheight-22;
   font-weight: $thick;
   color: $black;
+  @media (max-width: $breakpoint) {
+    font-size: $size-18;
+    line-height: $lheight-18m;
+  }
+}
+
+.inputh {
+  font-family: 'Playfair Display', serif;
+  font-size: $size-22;
+  line-height: $lheight-22;
+  font-weight: $thick;
+  color: $white;
   @media (max-width: $breakpoint) {
     font-size: $size-18;
     line-height: $lheight-18m;
@@ -105,13 +123,26 @@ main {
   }
 }
 
-//Newsletter - Craving more?
+//Newsletter - Craving more? & email
 .n-c {
   font-family: 'Poppins', sans-serif;
   font-size: $size-16;
   font-weight: $normal;
   line-height: $lheight-0;
   color: $beige;
+  @media (max-width: $breakpoint) {
+    align: center;
+    font-size: $size-12;
+    line-height: $lheight-0;
+  }
+}
+
+.n-e {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-16;
+  font-weight: $normal;
+  line-height: $lheight-0;
+  color: $white;
   @media (max-width: $breakpoint) {
     align: center;
     font-size: $size-12;
@@ -139,6 +170,8 @@ main {
     text-decoration: underline;
   }
   @media (max-width: $breakpoint) {
+    font-family: 'Playfair Display', serif;
+    font-weight: $thick;
     align: center;
     color: $black;
     font-size: $size-60;
@@ -153,6 +186,23 @@ main {
   font-weight: $super-thin;
   line-height: $lheight-0;
   color: $light-grey-text;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//Footer heading
+.footerh {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-18;
+  font-weight: $thin;
+  line-height: $lheight-18d2;
+  color: $black;
+  @media (max-width: $breakpoint) {
+    font-size: $size-14;
+    line-height: $lheight-0;
+  }
 }
 
 .takki {
@@ -181,6 +231,10 @@ button {
   border: 1px solid $beige;
   height: 52px;
   width: 250px;
+  @media (max-width: $breakpoint) {
+    height: 42px;
+    width: 191px;
+  }
 }
 
 button:hover,
@@ -204,4 +258,8 @@ button:focus a {
 
 li {
   list-style-type: none;
+}
+
+::placeholder {
+  color: $dark-grey-text;
 }

@@ -13,6 +13,11 @@
   margin-left: -$offset;
 }
 
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .col {
 	padding-left: $offset;
   padding-right: $offset;

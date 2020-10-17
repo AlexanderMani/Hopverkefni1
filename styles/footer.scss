@@ -1,11 +1,11 @@
+@import 'config';
+
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 336px;
   margin-top: auto;
-  position:fixed;
-  bottom: 0;
   width: 100%;
 }
 
@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   margin: 0;
 }
 
@@ -23,6 +23,72 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+//Newsletter
+
+.newsletterbox {
+  height: 339px;
+  background-color: $black;
+  width: 100%;
+}
+
+.nl {
+  height: 100%;
+  @media (max-width: $breakpoint) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $breakpoint) {
+    width: 275px;
+  }
+}
+.subscribe2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: $breakpoint) {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.form {
+  margin-top: -10px;
+}
+
+input {
+  background: transparent;
+  border: 1px $beige;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  height: 60px;
+  width: 100%;
+  &:focus {
+    outline: transparent;
+  }
+  @media (max-width: $breakpoint) {
+    height: 45px;
+  }
+}
+
+.buttonsub {
+  align-items: end;
+  padding-top: $size-22;
+  @media (max-width: $breakpoint) {
+    padding-bottom: 40px;
+    align-items: center;
+  }
 }

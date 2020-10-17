@@ -5,30 +5,66 @@
   display: none;
     @media (max-width: 800px){
       display: inherit;
-  }
-  &:focus {
-    .hamburgermenu {
-      display: flex;
     }
-    .menu-item {
-      display: flex;
-    }
-  }
-}
-.burger {
-  position: fixed;
-  right: $offset;
-  padding-top: $offset/3;
 }
 
-.x {
+//Takkinn
+
+.menu-btn {
   position: fixed;
-  right: $offset+2.5px;
-  padding-top: $offset/3-1px;
+  height: 30px;
+  width: 40px;
+  right: $offset*3;
   display: none;
-  &.burger:target {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  @media (max-width: $breakpoint) {
     display: flex;
   }
+}
+
+.menu-btn-burger {
+  width: 25px;
+  height: 3px;
+  background: $black;
+  border-radius: 6px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: $black;
+  border-radius: 6px;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-7px);
+}
+
+.menu-btn-burger::after {
+  transform: translateY(7px);
+}
+
+/* Animation */
+
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .hamburger-menu {
@@ -40,3 +76,51 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
+// Menu-ið
+
+#toggle {
+  display: none;
+}
+
+
+label {
+  display: none;
+  @media (max-width: $breakpoint) {
+    display: inherit;
+  }
+}
+
+@media (max-width: $breakpoint) {
+  .valmynd {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin-right: $offset;
+    display: none;
+    flex-direction: column;
+    height: 85vmax;
+    justify-content: space-evenly;
+    padding-right: $gutter;
+    margin-top: 60px;
+    background: $white;
+
+  }
+  .valmynd a {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 20vh;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    background-color: $light-grey;
+  }
+
+  #toggle:checked + .valmynd {
+    display: flex;
+  }
+}
+
+
