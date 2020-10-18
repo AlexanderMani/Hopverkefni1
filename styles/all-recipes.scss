@@ -1,0 +1,19 @@
+@import 'config.scss';
+
+
+.checkbox {
+  padding-top: 114-58px;
+}
+
+.checkbox input {
+  height: 18px;
+  width: 18px;
+}
+
+.checkbox label {
+  display: inline;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: $size-22;
+  font-weight: $thick;
+  line-height: $lheight-40;
+}
