@@ -1,5 +1,17 @@
 @import 'styles/config';
 
+// notið þetta þegar grid er ekki inni í main
+
+.padding{
+  padding-left: $offset;
+  padding-right: $offset;
+}
+
+// notið eftirfarandi strúktúr: <class="main"> eða <class="padding">
+//                                <class"grid">
+//                                  <class"row">
+//                                    <class"col col-?">
+
 .grid {
   margin: 0 auto;
 	max-width: $grid-max;
@@ -13,22 +25,19 @@
   margin-left: -$offset;
 }
 
-.row2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .col {
 	padding-left: $offset;
   padding-right: $offset;
 }
 
+// for loopa - býr til col klasa. col-1 spannar einn dálk af 12 eða c.a. 8.7% width. col-12 spannar 100% width.
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		width: percentage($i / 12);
 	}
 }
 
+// Offset ef þú vilt láta textann byrja annarsstaðar en lengst til vinstri. Tölurnar táknar fjölda dálka.
 @for $i from 1 through 6 {
 	.offset-col-#{$i} {
 		margin-left: percentage($i / 12);
@@ -36,6 +45,7 @@
 	}
 }
 
+// Sama og fyrir ofan nema fyrir mobile.
 @media (max-width: $breakpoint) {
 	@for $i from 1 through 12 {
 		.col-s-#{$i} {

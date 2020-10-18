@@ -2,7 +2,7 @@
 
 .hoffset {
   position: fixed;
-  max-width: $grid-max;
+  max-width: $grid-max+$gutter;
   width: 100%;
 }
 
@@ -33,5 +33,9 @@
 
 
 .valhlekkir {
- padding-left: 26px;
+  padding-left: 26px;
+  @media (max-width: $breakpoint) {
+  margin-left: -15px;
+  padding-left: 0px;
+  }
 }
