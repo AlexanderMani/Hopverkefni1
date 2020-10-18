@@ -36,7 +36,7 @@
 }
 
 .description {
-  padding-top: 21px;
+  padding-top: 14px;
   padding-bottom: 30px;
   @media (max-width: $breakpoint) {
     display: none;
@@ -98,7 +98,7 @@
   background-image: url(../img/Preparation-Icon.svg);
   background-repeat: no-repeat;
   width: 24px;
-  height: 22px;
+  height: 26px;
   margin-right: 12px;
 }
 
@@ -120,4 +120,13 @@
 
 .hero-video {
   height: 650px;
+  background-image: url(../img//videobg.png)
+}
+
+.hero {
+  background-image: linear-gradient(to right, $black 35%, transparent);
+}
+
+.white {
+  color: $white;
 }
