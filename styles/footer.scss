@@ -11,7 +11,7 @@
 
 .midja {
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 100px;
@@ -44,6 +44,18 @@
   }
 }
 
+.desktop {
+  @media (max-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+  @media (max-width: $breakpoint) {
+    display: block;
+  }
+}
 .subscribe {
   display: flex;
   flex-direction: column;
