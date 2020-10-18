@@ -1,5 +1,7 @@
 @import 'config';
 
+
+// Almennt
 .hero-index {
   display: block;
   height: 800px;
@@ -10,6 +12,7 @@
   overflow: hidden;
   @media (max-width: $breakpoint) {
     background-position: 65% 50%;
+    height: 100vh;
   }
 }
 
@@ -21,12 +24,7 @@
   padding-bottom: 150px;
   @media (max-width: $breakpoint) {
     align-items: center;
-  }
-}
-
-.eyebrow {
-  @media (max-width: $breakpoint) {
-    text-align: center;
+    height: 100vh;
   }
 }
 
@@ -45,8 +43,81 @@
   }
 }
 
-.btn {
-  @media (max-width: $breakpoint) {
+// Forsíða
+.eyebrow {
+@media (max-width: $breakpoint) {
     text-align: center;
   }
+}
+
+.btn {
+  @media (max-width: $breakpoint) {
+    margin-bottom: 20vh;
+  }
+}
+
+// Uppskriftasíða
+
+.nedra-augnlok {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 21px;
+  @media (max-width: $breakpoint) {
+    flex-direction: column;
+  }
+}
+
+.first-word {
+  font-weight: 400;
+  color: $black;
+}
+
+.nedra-augnlok-texti {
+  padding-right: 36px;
+}
+
+.hanskar {
+  background-image: url(../img/baking_gloves.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.diskur {
+  background-image: url(../img/Servings-Icon.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.hnifur {
+  background-image: url(../img/Preparation-Icon.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 22px;
+  margin-right: 12px;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.falid {
+  display: none;
+  @media (max-width: $breakpoint) {
+    display: inherit;
+    width: 55%;
+  }
+}
+
+// Videouppskrifasíða
+
+.hero-video {
+  height: 650px;
 }
