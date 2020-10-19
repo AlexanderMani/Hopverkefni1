@@ -17,3 +17,20 @@
   font-weight: $thick;
   line-height: $lheight-40;
 }
+
+
+.uppskrift-texti {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  margin-bottom: 20px;
+}
+
+.uppskrift-ingredients-texti {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 390px;
+  margin-bottom: 20px;
+}
