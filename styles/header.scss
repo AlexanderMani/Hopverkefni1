@@ -13,7 +13,12 @@
   position: fixed;
   padding-left: $offset;
   padding-right: $offset;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -21,7 +26,6 @@
   height: 80px;
   padding-top: 28px;;
   padding-bottom: 27px;
-  z-index: 3;
   background-color: $white;
 }
 
