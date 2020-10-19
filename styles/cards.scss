@@ -104,9 +104,17 @@
 .hlekkur-readmore {
   padding-right: 26px;
   padding-top: 5px;
+  @media (max-width: $breakpoint) {
+    padding-right: 17px;
+    padding-top: 2px;
+  }
 }
 
 .hlekkur-see {
   padding-right: 26px;
   padding-top: 5px;
+  @media (max-width: $breakpoint) {
+    padding-right: 17px;
+    padding-top: 2px;
+  }
 }
