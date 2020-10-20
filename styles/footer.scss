@@ -104,3 +104,19 @@ input {
     align-items: center;
   }
 }
+
+
+.seemore-button {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom:40px;
+    @media (max-width: $breakpoint) {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+
+  }

@@ -258,6 +258,7 @@ button {
   @media (max-width: $breakpoint) {
     height: 42px;
     width: 191px;
+    outline: none;
   }
 }
 
@@ -287,5 +288,11 @@ li {
 
 ::placeholder {
   color: $dark-grey-text;
+}
+
+
+
+
+
 }
 }
