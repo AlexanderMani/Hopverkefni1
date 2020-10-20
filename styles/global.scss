@@ -107,6 +107,17 @@ main {
   color: $beige-grey-text;
   @media (max-width: $breakpoint) {
     font-size: $size-16;
+
+    &:first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: $size-36;
+    font-weight: $thick;
+    line-height: $lheight-36;
+    color: $beige;
+    @media (max-width: $breakpoint) {
+      font-size: $size-32;
+      line-height: $lheight-32-2;
+    }
   }
 }
 
@@ -212,6 +223,7 @@ main {
   font-weight: $normal;
   font-size: $size-16;
   line-height: $lheight-0;
+  outline: none;
   &:link {
     text-decoration: none;
   }
@@ -223,6 +235,7 @@ main {
   }
   &:active {
     text-decoration: underline;
+
   }
 
 }
@@ -254,6 +267,7 @@ button:focus a {
   background-color: $black; //eða kannski transparent bara
   color: $beige;
   border-color: $beige;
+  outline: none;
 }
 
 li {

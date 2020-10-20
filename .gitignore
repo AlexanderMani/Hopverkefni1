@@ -20,4 +20,4 @@ yarn-error.log*
 
 .env
 
-'styles.css'
+styles.css
