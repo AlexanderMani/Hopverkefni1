@@ -280,7 +280,7 @@ button:focus a {
 
 //dæmi um hvernig button gæti verið í footer
 .sub-button {
-  background-color: $transparent; //eða kannski transparent bara
+  background-color: transparent; //eða kannski transparent bara
   color: $black;
   border-color: $beige;
   outline: none;
@@ -288,30 +288,11 @@ button:focus a {
 }
 
 
+hr {
 
-.seemore-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  color: $beige;
 }
 
-.seemore-button > hr {
-  display: flex;
-  justify-content: center;
-  align-items: center
-  color:$bage;
-}
-
-.seemore-button2 {
-  background-color: $transparent;
-  color: $black;
-  border-color: $beige;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 li {
   list-style-type: none;
@@ -324,6 +305,3 @@ li {
 
 
 
-
-}
-}

@@ -20,24 +20,46 @@
 
 
 .uppskrift-texti {
-  background-color:black;
+  background-color: $white;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   height: 800px;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
+
 
 .uppskrift-ingredients-texti {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 800px;
+  justify-content: flex-start;
+  align-content: space-between;
+  width: 269px;
+
   margin-bottom: 20px;
-  order: 1;
-  margin: 50px 0px;
+  margin-top: 40px;
+  order: 0;
 
   }
 
+  .seemore-button2 {
+    background-color: transparent;
+    color: $beige;
+    border-color: $beige;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .seemore-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 339px;
+    background-color: $white;
+    width: 100%;
+  }
 
 
