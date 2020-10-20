@@ -134,6 +134,17 @@ main {
   }
 }
 
+//horizontal line for See More button
+
+.hr{
+  padding-bottom: 10px;
+  border-bottom: 2px solid $beige;
+  @media (max-width: $breakpoint) {
+  visibility: hidden;
+  }
+}
+
+
 //Newsletter - Craving more? & email
 .n-c {
   font-family: 'Poppins', sans-serif;
@@ -264,7 +275,7 @@ button:focus a {
 
 //dæmi um hvernig button gæti verið í footer
 .sub-button {
-  background-color: $black; //eða kannski transparent bara
+  background-color: $transparent; //eða kannski transparent bara
   color: $beige;
   border-color: $beige;
   outline: none;
@@ -276,4 +287,5 @@ li {
 
 ::placeholder {
   color: $dark-grey-text;
+}
 }
