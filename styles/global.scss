@@ -136,9 +136,13 @@ main {
 
 //horizontal line for See More button
 
-.hr{
-  padding-bottom: 10px;
-  border-bottom: 2px solid $beige;
+hr {
+
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
   @media (max-width: $breakpoint) {
   visibility: hidden;
   }
@@ -277,9 +281,36 @@ button:focus a {
 //dæmi um hvernig button gæti verið í footer
 .sub-button {
   background-color: $transparent; //eða kannski transparent bara
-  color: $beige;
+  color: $black;
   border-color: $beige;
   outline: none;
+  align-items: center;
+}
+
+
+
+.seemore-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seemore-button > hr {
+  display: flex;
+  justify-content: center;
+  align-items: center
+  color:$bage;
+}
+
+.seemore-button2 {
+  background-color: $transparent;
+  color: $black;
+  border-color: $beige;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li {

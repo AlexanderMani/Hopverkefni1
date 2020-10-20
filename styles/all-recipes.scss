@@ -38,26 +38,6 @@
 
   }
 
-  .seemore-line {
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @media (max-width: $breakpoint) {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  }
-
-
-  .seemore-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @media (max-width: $breakpoint) {
-    width: 275px;
-  }
-}
 
 
 
