@@ -22,17 +22,18 @@
 .uppskrift-texti {
   background-color: $white;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   height: 800px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
 
 
+
 .uppskrift-ingredients-texti {
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
   width: 269px;
