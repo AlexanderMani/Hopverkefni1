@@ -1,38 +1,35 @@
 // Hér eiga að vera stillingar með scss breytum fyrir:
 // grid, max-width á síðu, transitions,
-// liti, margin-bottom gildi sem eru sameiginleg
-
-
+// liti, margin-bottom gildi sem eru sameiginle
 
 $grid-max: 1290px;
 $gutter: 30px;
 $offset: 15px;
-$breakpoint: 1150px;
-
+$breakpoint500: 500px;
+$breakpoint800: 800px;
+$breakpoint1200: 1200px;
 
 //Leturstærðir og line-height lykill
 
 //Mobile
-      // 12px Line height 0.5px  - Date on recipe card / email text on footer / *go to store button
-      // 14px line height 0.5px  - button text / read more /
-      // 15px Line-height 25px - Main text / recipe text / information text
-      // 16px Line height 17px - Ingredients text
-      // 18px Line height 24px - Recipe title
-      // 20px Line height 27px - Sub heading
-      // 32px Line height 43px - Heading
-      // 60px Line height 90px - Navigation bar
-
+// 12px Line height 0.5px  - Date on recipe card / email text on footer / *go to store button
+// 14px line height 0.5px  - button text / read more /
+// 15px Line-height 25px - Main text / recipe text / information text
+// 16px Line height 17px - Ingredients text
+// 18px Line height 24px - Recipe title
+// 20px Line height 27px - Sub heading
+// 32px Line height 43px - Heading
+// 60px Line height 90px - Navigation bar
 
 // Desktop
-      // 14px Line-height 1.5       - Date on recipe card / email text on footer /
-      // 15px Line-height 1.5       - Header navigation items - Navigation
-      // 16px Line-height 1.5       - on top of heading / Read more recipe / Button text
-      // 18px Line-height 17px/32px - 17 -> come join us footer / recipe ingredients | 32 -> Maintext / Information text /
-      // 22px Line-height 29px      - Recipe title / Email example text / Only show video recipies box /
-      // 36px Line-height 0.5       - Numbers for ingredients /
-      // 40px Line-height 53px   - Recipe heading
-      // 60px Line-height 80px   - Heading
-
+// 14px Line-height 1.5       - Date on recipe card / email text on footer /
+// 15px Line-height 1.5       - Header navigation items - Navigation
+// 16px Line-height 1.5       - on top of heading / Read more recipe / Button text
+// 18px Line-height 17px/32px - 17 -> come join us footer / recipe ingredients | 32 -> Maintext / Information text /
+// 22px Line-height 29px      - Recipe title / Email example text / Only show video recipies box /
+// 36px Line-height 0.5       - Numbers for ingredients /
+// 40px Line-height 53px   - Recipe heading
+// 60px Line-height 80px   - Heading
 
 //Stærðir.
 
@@ -57,7 +54,6 @@ $size-60: 60px;     // 60px
 $size-80: 80px;     // 80px
 $size-90: 90px;     // 90px
 
-
 // Line-height
 
 $lheight-0: 1.5;
@@ -78,10 +74,10 @@ $lheight-60: $size-80;
 
 $black: #000;
 $grey: #999;
-$light-grey:#FAFAFA;
-$light-beige: #F7F1EB;
-$white: #FFFFFF;
-$brown: #F7F1EB;
+$light-grey:#fafafa;
+$light-beige: #f7f1eb;
+$white: #fff;
+$brown: #f7f1eb;
 
 //Font weight
 
@@ -91,10 +87,10 @@ $thin: 400;
 $super-thin: 300;
 // Letur og icon litir aðrir en svart og hvítt
 
-$beige: #E3CDB1;
-$beige-grey-text:#9B9B9B;
-$light-grey-text:#D0D0D0;
-$grey-text:#5E5B69;
+$beige: #e3cdb1;
+$beige-grey-text:#9b9b9b;
+$light-grey-text:#d0d0d0;
+$grey-text:#5e5b69;
 $dark-grey-text: #525252;
 
 // button transition

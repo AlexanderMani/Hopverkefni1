@@ -3,9 +3,10 @@
 .hamburger {
   cursor: pointer;
   display: none;
-    @media (max-width: 800px){
-      display: inherit;
-    }
+
+  @media (max-width: 800px) {
+    display: inherit;
+  }
 }
 
 //Takkinn
@@ -19,9 +20,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all .5s ease-in-out;
-  @media (max-width: $breakpoint) {
+  transition: all 0.5s ease-in-out;
+
+  @media (max-width: $breakpoint500) {
     display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -30,7 +35,7 @@
   height: 3px;
   background: $black;
   border-radius: 6px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before,
@@ -41,7 +46,7 @@
   height: 3px;
   background: $black;
   border-radius: 6px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn-burger::before {
@@ -69,10 +74,12 @@
 
 .hamburger-menu {
   display: none;
+
   &:checked {
     max-height: 100vmax;
     height: 100vmax;
   }
+
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -83,44 +90,42 @@
   display: none;
 }
 
-
 label {
   display: none;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint500) {
     display: inherit;
   }
 }
 
-@media (max-width: $breakpoint) {
+@media (max-width: $breakpoint500) {
   .valmynd {
-    position: absolute;
+    margin-top: 25px;
+    position: fixed;
     left: 0;
     text-align: center;
     width: 100%;
     margin-right: $offset;
     display: none;
     flex-direction: column;
-    height: 85vmax;
-    justify-content: space-evenly;
+    height: 100vmax;
+    justify-content: start;
     padding-right: $gutter;
-    margin-top: 60px;
     background: $white;
-
   }
+
   .valmynd a {
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 20vh;
+    height: 22.5vh;
     justify-content: center;
-    margin: 0;
     width: 100vw;
     background-color: $light-grey;
+    margin-top: 1px;
   }
 
   #toggle:checked + .valmynd {
     display: flex;
   }
 }
-
-

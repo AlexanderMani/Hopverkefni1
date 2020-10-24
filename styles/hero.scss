@@ -1,17 +1,38 @@
 @import 'config';
 
-
 // Almennt
 .hero-index {
   display: block;
-  height: 800px;
+  height: 690px;
   width: 100%;
+  background-color: $light-grey;
   background-image: url(../img/Background-Header-Image.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   overflow: hidden;
-  @media (max-width: $breakpoint) {
-    background-position: 65% 50%;
+
+  @media (max-width: $breakpoint1200) {
+    background-position: 65% 100%;
+  }
+
+  @media (max-width: $breakpoint500) {
+    background-position: 65% 100%;
+    height: 100vh;
+  }
+}
+
+.hero-index-video {
+  display: block;
+  height: 690px;
+  width: 100%;
+  background-color: $light-grey;
+  background-image: url(../img/Background-Header-Image.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint500) {
+    background-position: 65% 100%;
     height: 100vh;
   }
 }
@@ -20,16 +41,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 800px;
+  height: 690px;
   padding-bottom: 150px;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint800) {
     align-items: center;
     height: 100vh;
   }
 }
 
 .title {
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint800) {
     text-align: center;
     padding-bottom: 17px;
   }
@@ -38,20 +60,25 @@
 .description {
   padding-top: 14px;
   padding-bottom: 30px;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint800) {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint500) {
     display: none;
   }
 }
 
 // Forsíða
 .eyebrow {
-@media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint800) {
     text-align: center;
   }
 }
 
 .btn {
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint800) {
     margin-bottom: 20vh;
   }
 }
@@ -64,7 +91,12 @@
   flex-direction: row;
   justify-content: left;
   padding-top: 21px;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint800) {
+    margin-bottom: 300px;
+  }
+
+  @media (max-width: $breakpoint500) {
     flex-direction: column;
   }
 }
@@ -110,7 +142,8 @@
 
 .falid {
   display: none;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint500) {
     display: inherit;
     width: 55%;
   }
@@ -118,9 +151,25 @@
 
 // Videouppskrifasíða
 
+.nedra-augnlok-video {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 21px;
+
+  @media (max-width: $breakpoint800) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $breakpoint500) {
+    flex-direction: column;
+  }
+}
+
 .hero-video {
   height: 650px;
-  background-image: url(../img//videobg.png)
+  background-image: url(../img//videobg.png);
 }
 
 .hero {
@@ -129,4 +178,8 @@
 
 .white {
   color: $white;
+}
+
+.collie {
+  width: 60%;
 }
