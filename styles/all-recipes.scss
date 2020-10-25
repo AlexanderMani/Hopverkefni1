@@ -18,6 +18,11 @@
   line-height: $lheight-40;
 }
 
+.recipe{
+
+
+}
+
 
 .uppskrift-texti {
   background-color: $white;
@@ -36,7 +41,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
-  width: 269px;
+
 
   margin-bottom: 20px;
   margin-top: 40px;
@@ -44,23 +49,28 @@
 
   }
 
-  .seemore-button2 {
-    background-color: transparent;
-    color: $beige;
-    border-color: $beige;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .see-more-button-class {
+    @media (max-width: $breakpoint) {
+      margin-bottom: 20vh;
+    }
   }
+
 
   .seemore-button {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    height: 339px;
+    flex-direction: column;
     background-color: $white;
-    width: 100%;
+    height:200px;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+
+
+  }
+
+//line for button
+  hr {
+    color: $beige;
   }
 
 
