@@ -1,5 +1,56 @@
 @import 'config.scss';
 
+
+.recipe {
+  display: flex;
+  height: 600px;
+  background-color:$beige;
+}
+
+.ingredients-text {
+display: flex;
+flex-direction: column;
+height:500px;
+justify-content: start;
+
+  &.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:500px;
+    justify-content: space-evenly
+  }
+  }
+
+.recipe-text{
+display: flex;
+flex-direction: column;
+height:100%;
+width:100%;
+
+
+  &.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+}
+
+/*
+  @media (max-width: $breakpoint1200) {
+    background-position: 65% 100%;
+  }
+
+  @media (max-width: $breakpoint500) {
+    background-position: 65% 100%;
+    height: 100vh;
+  }
+}
+*/
+
+
 .checkbox {
   padding-top: 58px;
 }
@@ -17,7 +68,7 @@
   line-height: $lheight-40;
 }
 
-.recipe{
+.recipe {
   background-color: $white;
 
 }
@@ -37,8 +88,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
-
-
   margin-bottom: 20px;
   margin-top: 40px;
   order: 0;
@@ -47,22 +96,12 @@
 
 
 
-  .seemore-button {
-    display: flex;
-    background-color: $white;
-    height:200px;
-    height: 200px;
-  }
-
-//line for button
-  hr {
-    color: $beige;
-  }
-
-
+// Takki fyrir neðan grein
 .seemore-button {
   display: flex;
   flex-direction: column;
   height: 339px;
   background-color: $white;
 }
+
+
