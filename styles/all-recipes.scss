@@ -17,15 +17,11 @@
   line-height: $lheight-40;
 }
 
-<<<<<<< HEAD
 .recipe{
-
+  background-color: $white;
 
 }
 
-
-=======
->>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
 .uppskrift-texti {
   background-color: $white;
   display: flex;
@@ -39,39 +35,23 @@
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-content: space-between;
-<<<<<<< HEAD
 
 
-=======
-  width: 269px;
->>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
   margin-bottom: 20px;
   margin-top: 40px;
   order: 0;
 }
 
-<<<<<<< HEAD
-  }
 
-  .see-more-button-class {
-    @media (max-width: $breakpoint) {
-      margin-bottom: 20vh;
-    }
-  }
 
 
   .seemore-button {
     display: flex;
-    flex-direction: column;
     background-color: $white;
     height:200px;
     height: 200px;
-    align-content: center;
-    justify-content: center;
-
-
   }
 
 //line for button
@@ -79,23 +59,10 @@
     color: $beige;
   }
 
-=======
-.seemore-button2 {
-  background-color: transparent;
-  color: $beige;
-  border-color: $beige;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
->>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
 
 .seemore-button {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  flex-direction: column;
   height: 339px;
   background-color: $white;
-  width: 100%;
 }
