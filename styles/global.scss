@@ -107,7 +107,12 @@ main {
 hr {
   color: $beige;
 }
-//Ingredients
+
+
+
+
+
+//Ingredients (first number targeted)
 .ingredients {
   font-family: 'Poppins', sans-serif;
   font-weight: $super-thin;
@@ -115,9 +120,9 @@ hr {
   line-height: $lheight-18d2;
   color: $beige-grey-text;
 
-  @media (max-width: $breakpoint500) {
+    @media (max-width: $breakpoint500) {
     font-size: $size-16;
-  }
+    }
 
 
     ::first-letter {
@@ -133,8 +138,6 @@ hr {
       }
     }
   }
-
-
 
 
   //horizontal line for See More button
