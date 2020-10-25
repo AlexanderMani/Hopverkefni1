@@ -91,7 +91,7 @@ main {
 }
 
 //Meginmál
-.p {
+p {
   font-family: 'Poppins', sans-serif;
   font-size: $size-18;
   line-height: $lheight-0;
@@ -108,9 +108,6 @@ main {
 //Fyrir uppskriftar sidur ------ /////////////////////////////////
 
 
-
-
-
 //Ingredients (first number targeted)
 .ingredients {
   font-family: 'Poppins', sans-serif;
@@ -123,13 +120,16 @@ main {
     font-size: $size-16;
     }
 
-
-    ::first-letter {
+    &::first-letter {
       font-family: 'Playfair Display', serif;
       font-size: $size-36;
       font-weight: $thick;
       line-height: $lheight-36;
       color: $beige;
+      font-size: 150%;
+      vertical-align: text-top;
+      padding-right:10px;
+
 
       @media (max-width: $breakpoint500) {
         font-size: $size-32;
@@ -138,7 +138,19 @@ main {
     }
   }
 
+  .ingredients-larger{
+    font-family: 'Poppins', sans-serif;
+    font-weight: $super-thin;
+    font-size: $size-40;
+    line-height: $lheight-32;
+    color: $beige-grey-text;
 
+
+      @media (max-width: $breakpoint500) {
+      font-size: $size-16;
+      }
+
+    }
   //horizontal line for See More button
 
   .hr {
@@ -152,7 +164,7 @@ main {
     visibility: hidden;
   }
 
-//Endir a uppskriftarsidum --------////////////////////////////////
+//Endir a uppskriftarsidum --------
 
 
 
