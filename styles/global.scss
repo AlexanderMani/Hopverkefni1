@@ -117,8 +117,10 @@ hr {
 
   @media (max-width: $breakpoint500) {
     font-size: $size-16;
+  }
 
-    &::first-letter {
+
+    ::first-letter {
       font-family: 'Playfair Display', serif;
       font-size: $size-36;
       font-weight: $thick;
@@ -132,23 +134,12 @@ hr {
     }
   }
 
-  //Ingredients number
-  .inumber {
-    font-family: 'Playfair Display', serif;
-    font-size: $size-36;
-    font-weight: $thick;
-    line-height: $lheight-36;
-    color: $beige;
 
-    @media (max-width: $breakpoint500) {
-      font-size: $size-32;
-      line-height: $lheight-32-2;
-    }
-  }
+
 
   //horizontal line for See More button
 
-  hr {
+  .hr {
     border: 0;
     height: 1px;
     background: #333;
@@ -158,7 +149,7 @@ hr {
   @media (max-width: $breakpoint500) {
     visibility: hidden;
   }
-}
+
 
 //Newsletter - Craving more? & email
 .n-c {
@@ -306,6 +297,8 @@ button:focus a {
   outline: none;
   align-items: center;
 }
+
+
 
 li {
   list-style-type: none;
