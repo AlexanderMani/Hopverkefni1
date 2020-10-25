@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.hoffset2 {
+  max-width: $grid-max+$gutter;
+  width: 100%;
+}
+
 .headerbackground {
   width: 100%;
   height: 80px;
@@ -19,27 +24,60 @@
   z-index: 1000;
 }
 
+.headerbackground2 {
+  width: 100%;
+  height: 110px;
+  background-color: $light-grey;
+  padding-left: $offset;
+  padding-right: $offset;
+  display: inline-block;
+  padding-top: 25px;
+}
+
+.hide {
+  opacity: 0;
+  left: -100%;
+}
+
+.show {
+  opacity: 1;
+  left: 0;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 80px;
-  padding-top: 28px;;
+  padding-top: 28px;
   padding-bottom: 27px;
   background-color: $white;
 }
 
+.header2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  background-color: $light-grey;
+}
+
 .valmynd {
-  @media (max-width: $breakpoint){
+  @media (max-width: $breakpoint500) {
     display: none;
   }
 }
 
-
 .valhlekkir {
   padding-left: 26px;
-  @media (max-width: $breakpoint) {
-  margin-left: -15px;
-  padding-left: 0px;
+
+  @media (max-width: $breakpoint500) {
+    margin-left: -15px;
   }
+}
+
+.whitebg {
+  background-color: $white;
 }

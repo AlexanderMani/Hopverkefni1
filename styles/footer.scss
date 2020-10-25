@@ -37,7 +37,8 @@
 
 .nl {
   height: 100%;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -45,30 +46,35 @@
 }
 
 .desktop {
-  @media (max-width: $breakpoint) {
+  @media (max-width: $breakpoint1200) {
     display: none;
   }
 }
 
 .mobile {
   display: none;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     display: block;
   }
 }
+
 .subscribe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     width: 275px;
   }
 }
+
 .subscribe2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 30px;
@@ -88,10 +94,12 @@ input {
   border-bottom-style: groove;
   height: 60px;
   width: 100%;
+
   &:focus {
     outline: transparent;
   }
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     height: 45px;
   }
 }
@@ -99,11 +107,9 @@ input {
 .buttonsub {
   align-items: end;
   padding-top: $size-22;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint1200) {
     padding-bottom: 40px;
     align-items: center;
   }
 }
-
-
-

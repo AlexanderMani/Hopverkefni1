@@ -2,19 +2,21 @@
 @import 'config';
 
 .prufa {
-  background-color: #FAFAFA;
+  background-color: $white;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .uppskrift-titill,
   .video-uppskrift-titill {
     font-size: 18px;
   }
+
   .hlekkur-readmore,
   .hlekkur-see {
     font-size: 14px;
   }
 }
+
 .uppskrift-box {
   background-color: white;
   display: flex;
@@ -35,20 +37,6 @@
 .mynd-uppskrift-box {
   display: flex;
   height: 290px;
-}
-
-.mynd-video-uppskrift-box {
-  display: flex;
-  height: 230px;
-  background-color: $beige;
-  &:hover{
-    .play {
-    display: block;
-    }
-    .rammi {
-      opacity: 0.7;
-    }
-  }
 }
 
 .rammi {
@@ -74,6 +62,22 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.mynd-video-uppskrift-box {
+  display: flex;
+  height: 230px;
+  background-color: $beige;
+
+  &:hover {
+    .play {
+      display: block;
+    }
+
+    .rammi {
+      opacity: 0.7;
+    }
+  }
 }
 
 .image-stack {
@@ -102,6 +106,7 @@
 .uppskrift-titill {
   height: 30px;
 }
+
 .titill-hlekkur {
   display: flex;
   flex-direction: row;
@@ -112,7 +117,8 @@
 .hlekkur-readmore {
   padding-right: 26px;
   padding-top: 5px;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint500) {
     padding-right: 17px;
     padding-top: 2px;
   }
@@ -121,7 +127,8 @@
 .hlekkur-see {
   padding-right: 26px;
   padding-top: 5px;
-  @media (max-width: $breakpoint) {
+
+  @media (max-width: $breakpoint500) {
     padding-right: 17px;
     padding-top: 2px;
   }

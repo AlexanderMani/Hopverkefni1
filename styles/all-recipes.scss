@@ -1,8 +1,7 @@
 @import 'config.scss';
 
-
 .checkbox {
-  padding-top: 114-58px;
+  padding-top: 58px;
 }
 
 .checkbox input {
@@ -18,12 +17,15 @@
   line-height: $lheight-40;
 }
 
+<<<<<<< HEAD
 .recipe{
 
 
 }
 
 
+=======
+>>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
 .uppskrift-texti {
   background-color: $white;
   display: flex;
@@ -33,20 +35,24 @@
   margin-top: 40px;
 }
 
-
-
 .uppskrift-ingredients-texti {
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: space-between;
+<<<<<<< HEAD
 
 
+=======
+  width: 269px;
+>>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
   margin-bottom: 20px;
   margin-top: 40px;
   order: 0;
+}
 
+<<<<<<< HEAD
   }
 
   .see-more-button-class {
@@ -73,4 +79,23 @@
     color: $beige;
   }
 
+=======
+.seemore-button2 {
+  background-color: transparent;
+  color: $beige;
+  border-color: $beige;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+>>>>>>> e95a97ed7b0ab5a26e745dc2dca7de4d9d2532a9
 
+.seemore-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  height: 339px;
+  background-color: $white;
+  width: 100%;
+}
