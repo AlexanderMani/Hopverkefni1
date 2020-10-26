@@ -105,9 +105,6 @@ p {
 }
 
 
-//Fyrir uppskriftar sidur ------ /////////////////////////////////
-
-
 //Ingredients (first number targeted)
 .ingredients {
   font-family: 'Poppins', sans-serif;
@@ -153,18 +150,18 @@ p {
     }
   //horizontal line for See More button
 
-  .hr {
+  hr {
+    width: 100%;
     border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    height: 2px;
+    background: #000;
+    opacity: 0.1;
+
   }
 
   @media (max-width: $breakpoint500) {
     visibility: hidden;
   }
-
-//Endir a uppskriftarsidum --------
 
 
 
