@@ -99,6 +99,18 @@ padding-bottom: 180px;
   }
 }
 
+.seemore-button2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70px;
+
+  @media (max-width: $breakpoint800) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+}
 .meginmal {
   margin-top: 90px;
   @media (max-width: $breakpoint800) {
