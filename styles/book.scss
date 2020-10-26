@@ -35,6 +35,7 @@
   @media (max-width: $breakpoint800) {
     bottom: 100px;
   }
+
   @media (max-width: $breakpoint500) {
     bottom: 100px;
   }
@@ -56,8 +57,8 @@
   padding-bottom: 21px;
 
   @media (max-width: $breakpoint1200) {
-  margin-left: -100px;
-  margin-right: -100px;
+    margin-left: -100px;
+    margin-right: -100px;
   }
 }
 

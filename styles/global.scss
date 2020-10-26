@@ -103,7 +103,6 @@ p {
   }
 }
 
-
 //Ingredients (first number targeted)
 .ingredients {
   font-family: 'Poppins', sans-serif;
@@ -112,12 +111,12 @@ p {
   line-height: $lheight-18d2;
   color: $beige-grey-text;
 
-    @media (max-width: $breakpoint500) {
+  @media (max-width: $breakpoint500) {
     font-size: $size-16;
-    }
   }
+}
 
-.ingredients-larger{
+.ingredients-larger {
   font-family: 'Poppins', sans-serif;
   font-weight: $super-thin;
   font-size: $size-40;
@@ -125,7 +124,7 @@ p {
   color: $beige-grey-text;
 
   @media (max-width: $breakpoint500) {
-  font-size: $size-16;
+    font-size: $size-16;
   }
 }
 
@@ -149,24 +148,22 @@ p {
   line-height: $lheight-30;
   color: $beige;
   vertical-align: text-top;
-  padding-right:10px;
+  padding-right: 10px;
 
   @media (max-width: $breakpoint500) {
     font-size: $size-32;
     line-height: $lheight-32-2;
   }
 }
-  //horizontal line for See More button
+//horizontal line for See More button
 
-  hr {
-    width: 100%;
-    border: 0;
-    height: 2px;
-    background: #000;
-    opacity: 0.1;
-
-  }
-
+hr {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background: #000;
+  opacity: 0.1;
+}
 
 //Newsletter - Craving more? & email
 .n-c {
@@ -315,8 +312,6 @@ button:focus a {
   align-items: center;
 }
 
-
-
 li {
   list-style-type: none;
 }
@@ -326,7 +321,7 @@ li {
 }
 
 .ingredients-text-2 {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -376,10 +371,12 @@ li {
     display: none;
   }
 }
+
 .show-mobile {
   @media (max-width: $breakpoint500) {
     display: block;
   }
+
   @media (min-width: $breakpoint500+1) {
     display: none;
   }
