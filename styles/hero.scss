@@ -77,6 +77,15 @@
   }
 }
 
+.eyebrow2 {
+  @media (max-width: $breakpoint800) {
+    text-align: start;
+  }
+  @media (max-width:$breakpoint650) {
+    text-align: center;
+  }
+}
+
 .btn {
   @media (max-width: $breakpoint800) {
     margin-bottom: 20vh;

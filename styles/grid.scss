@@ -91,3 +91,14 @@
     }
   }
 }
+
+@media (max-width: $breakpoint650) {
+  .hide-650 {
+    display: none;
+  }
+
+  .full-650 {
+    width: 100%;
+    text-align: center;
+  }
+}
