@@ -116,51 +116,47 @@ p {
     @media (max-width: $breakpoint500) {
     font-size: $size-16;
     }
-
-    &::first-letter {
-      font-family: 'Playfair Display', serif;
-      font-size: $size-36;
-      font-weight: $thick;
-      line-height: $lheight-36;
-      color: $beige;
-      font-size: 150%;
-      vertical-align: text-top;
-      padding-right:10px;
-
-
-      @media (max-width: $breakpoint500) {
-        font-size: $size-32;
-        line-height: $lheight-32-2;
-      }
-    }
   }
 
-  .ingredients-larger{
-    font-family: 'Poppins', sans-serif;
-    font-weight: $super-thin;
-    font-size: $size-40;
-    line-height: $lheight-32;
-    color: $beige-grey-text;
+.ingredients-larger{
+  font-family: 'Poppins', sans-serif;
+  font-weight: $super-thin;
+  font-size: $size-40;
+  line-height: $lheight-32;
+  color: $beige-grey-text;
 
+  @media (max-width: $breakpoint500) {
+  font-size: $size-16;
+  }
+}
 
-      @media (max-width: $breakpoint500) {
-      font-size: $size-16;
-      }
+.ingredients-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-18;
+  font-weight: $thin;
+  line-height: $lheight-18d2;
+  color: $black;
 
-    }
+  @media (max-width: $breakpoint500) {
+    font-size: $size-14;
+    line-height: $lheight-0;
+  }
+}
 
-    .ingredients-heading {
-      font-family: 'Poppins', sans-serif;
-      font-size: $size-18;
-      font-weight: $thin;
-      line-height: $lheight-18d2;
-      color: $black;
+.ingredients-number {
+  font-family: 'Playfair Display', serif;
+  font-size: $size-30r;
+  font-weight: $thick;
+  line-height: $lheight-30;
+  color: $beige;
+  vertical-align: text-top;
+  padding-right:10px;
 
-      @media (max-width: $breakpoint500) {
-        font-size: $size-14;
-        line-height: $lheight-0;
-      }
-    }
+  @media (max-width: $breakpoint500) {
+    font-size: $size-32;
+    line-height: $lheight-32-2;
+  }
+}
   //horizontal line for See More button
 
   hr {
@@ -171,11 +167,6 @@ p {
     opacity: 0.1;
 
   }
-
-  @media (max-width: $breakpoint500) {
-    visibility: hidden;
-  }
-
 
 
 //Newsletter - Craving more? & email
@@ -333,4 +324,17 @@ li {
 
 ::placeholder {
   color: $dark-grey-text;
+}
+
+.ingredients-padding {
+  padding-right: 50px;
+  margin-left: 15px;
+}
+
+.ingredients-padding2 {
+  padding-top: 10px;
+
+  @media (max-width: $breakpoint500) {
+    padding-top: 5px;
+  }
 }
