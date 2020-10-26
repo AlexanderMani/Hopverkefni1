@@ -4,7 +4,7 @@
 .recipe {
   display: flex;
   height: 1000px;
-  background-color:$beige;
+  background-color:$white;
 
 }
 
@@ -23,7 +23,6 @@ justify-content: start;
 
   }
 }
-
 
 .recipe-text {
 display: flex;
@@ -75,30 +74,6 @@ width: 1290px;
   line-height: $lheight-40;
 }
 
-.recipe {
-  background-color: $white;
-
-}
-
-.uppskrift-texti {
-  background-color: $white;
-  display: flex;
-  flex-direction: row;
-  height: 800px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-.uppskrift-ingredients-texti {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 40px;
-  order: 0;
-}
 
 
 
