@@ -367,6 +367,12 @@ li {
   }
 }
 
+.hide-desktop {
+  @media (max-width: $breakpoint1200) and (min-width: $breakpoint800+1) {
+    display: none;
+  }
+}
+
 .grey {
   color: $light-grey-text;
   padding-right: 10px;
