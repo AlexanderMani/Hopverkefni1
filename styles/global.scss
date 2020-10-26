@@ -353,6 +353,11 @@ li {
   }
 }
 
+.hide-mobile-plus {
+  @media (max-width: $breakpoint800) {
+    display: none;
+  }
+}
 .show-mobile {
   @media (max-width: $breakpoint500) {
     display: block;
@@ -360,4 +365,15 @@ li {
   @media (min-width: $breakpoint500+1) {
     display: none;
   }
+}
+
+.grey {
+  color: $light-grey-text;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+.takki-padding {
+  padding-top: 50px;
+  padding-bottom: 53px;
 }

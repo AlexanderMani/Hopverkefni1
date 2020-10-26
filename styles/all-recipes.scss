@@ -88,6 +88,12 @@ padding-bottom: 180px;
   flex-direction: column;
   align-items: center;
   height:150px;
+
+  @media (max-width: $breakpoint800) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
 }
 
 
