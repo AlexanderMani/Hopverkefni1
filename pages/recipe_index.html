@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uppskriftir - Leit</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
       </div>
     </header2>
     <header id="myID" class="headerbackground hide">
-      <script src="../scroll.js"></script>
+      <script src="../javascript/scroll.js"></script>
       <div class="grid">
         <div class="row">
           <div class="hoffset header col col-12">
@@ -47,7 +48,7 @@
           </div>
         </div>
       </div>
-      <script src="../main.js"></script>
+      <script src="../javascript/main.js"></script>
     </header>
 
     <main>
@@ -59,14 +60,12 @@
           </div>
           <div class="checkbox col col-3 col-l-6 col-m-6 hide-650">
             <form>
-              <input type="checkbox" id="show-video" name="show-video">
+              <input class="show-video" type="checkbox" name="show-video" value="1" onchange="valueChanged()">
               <label for="show-video">Only show video recipes</label>
             </form>
           </div>
         </div>
-
-        <div class="row">
-
+        <div class="normal-recipes-card row">
           <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
@@ -75,7 +74,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -88,7 +87,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -101,7 +100,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -113,7 +112,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -126,7 +125,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -138,7 +137,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -150,7 +149,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -163,7 +162,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -176,7 +175,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -188,7 +187,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -201,7 +200,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -213,7 +212,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -225,7 +224,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -238,7 +237,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -251,7 +250,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -263,7 +262,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -276,7 +275,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -288,7 +287,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -300,7 +299,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -313,7 +312,7 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
@@ -326,14 +325,13 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
+      <script src="../javascript/show-recipes.js"></script>
     </main>
 
     <footer>
