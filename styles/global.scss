@@ -14,7 +14,6 @@ body {
 main {
   padding-left: $offset;
   padding-right: $offset;
-  padding-top: 80px;
 }
 
 //Main heading á síðunni
@@ -341,5 +340,24 @@ li {
 
   @media (max-width: $breakpoint500) {
     padding-top: 5px;
+  }
+}
+
+.padding-forsida {
+  padding-bottom: 30px;
+}
+
+.hide-mobile {
+  @media (max-width: $breakpoint500) {
+    display: none;
+  }
+}
+
+.show-mobile {
+  @media (max-width: $breakpoint500) {
+    display: block;
+  }
+  @media (min-width: $breakpoint500+1) {
+    display: none;
   }
 }

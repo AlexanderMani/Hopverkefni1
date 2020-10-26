@@ -1,0 +1,100 @@
+@import 'config';
+
+.book {
+  height: 670px;
+  background-color: $light-beige;
+  width: 100%;
+  display: block;
+  margin-bottom: 10vw;
+
+  @media (max-width: $breakpoint1200) {
+    margin-bottom: 40vw;
+  }
+
+  @media (max-width: $breakpoint800) {
+    margin-bottom: 40vw;
+  }
+
+  @media (max-width: $breakpoint500) {
+    margin-bottom: 80vw;
+    height: 417px;
+  }
+}
+
+.margin-book {
+  position: relative;
+  bottom: -140px;
+  text-align: end;
+  z-index: 3;
+
+  @media (max-width: $breakpoint1200) {
+    text-align: center;
+    bottom: -50px;
+  }
+
+  @media (max-width: $breakpoint800) {
+    bottom: 100px;
+  }
+  @media (max-width: $breakpoint500) {
+    bottom: 100px;
+  }
+}
+
+.columns-book {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $breakpoint1200) {
+    text-align: center;
+    padding-top: 63px;
+  }
+}
+
+.book-h-padding {
+  padding-bottom: 21px;
+
+  @media (max-width: $breakpoint1200) {
+  margin-left: -100px;
+  margin-right: -100px;
+  }
+}
+
+.book-img {
+  position: relative;
+  z-index: 5;
+
+  @media (max-width: $breakpoint1200) {
+    width: 50%;
+  }
+
+  @media (max-width: $breakpoint500) {
+    width: 75%;
+  }
+}
+
+.empty-under {
+  height: 100px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: $breakpoint1200) {
+    height: 400px;
+  }
+}
+
+.book-btn {
+  margin-top: 30px;
+  background-color: transparent;
+
+  @media (max-width: $breakpoint1200) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.mobile-margin-book {
+  margin-top: -15px;
+  margin-bottom: -15px;
+}

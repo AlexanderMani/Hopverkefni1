@@ -102,3 +102,31 @@
     text-align: center;
   }
 }
+
+.offset-col-1-l {
+  margin-left: percentage(1 / 12);
+
+  @media (max-width: $breakpoint1200) {
+    margin-left: percentage(2/ 12);
+    margin-right: percentage(2 / 12);
+  }
+
+  @media (max-width: $breakpoint500) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.offset-col-1-r {
+  margin-right: percentage(1 / 12);
+
+  @media (max-width: $breakpoint1200) {
+    margin-left: percentage(1 / 12);
+    margin-right: percentage(1 / 12);
+  }
+
+  @media (max-width: $breakpoint500) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
