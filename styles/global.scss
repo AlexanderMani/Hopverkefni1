@@ -325,6 +325,16 @@ li {
   color: $dark-grey-text;
 }
 
+.ingredients-text-2 {
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  color: $light-grey-text;
+  margin-bottom: -30px;
+}
+
 .ingredients-padding {
   padding-right: 50px;
   margin-left: 15px;
@@ -341,6 +351,14 @@ li {
   @media (max-width: $breakpoint500) {
     padding-top: 5px;
   }
+}
+
+.ingredients-padding4 {
+  margin-bottom: 20px;
+}
+
+.ingredients-padding5 {
+  margin-bottom: 42px;
 }
 
 .padding-forsida {

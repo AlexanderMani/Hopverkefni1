@@ -99,6 +99,11 @@ padding-bottom: 180px;
   }
 }
 
-
+.meginmal {
+  margin-top: 90px;
+  @media (max-width: $breakpoint800) {
+    margin-top: 30px;
+  }
+}
 
 
