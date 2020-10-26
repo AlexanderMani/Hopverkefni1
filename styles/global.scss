@@ -148,6 +148,19 @@ p {
       }
 
     }
+
+    .ingredients-heading {
+      font-family: 'Poppins', sans-serif;
+      font-size: $size-18;
+      font-weight: $thin;
+      line-height: $lheight-18d2;
+      color: $black;
+
+      @media (max-width: $breakpoint500) {
+        font-size: $size-14;
+        line-height: $lheight-0;
+      }
+    }
   //horizontal line for See More button
 
   hr {

@@ -38,6 +38,7 @@ width: 1290px;
 
     p {
       width: 850px;
+      height:900px
     }
 
   }
@@ -75,15 +76,24 @@ width: 1290px;
 }
 
 
+  .line-hr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:50px;
+    align-items: center;
+
+  //need to add visability:hidden when scaled down
+}
 
 
-
-// Takki fyrir neðan grein
-.seemore-button {
+.seemore-button{
   display: flex;
   flex-direction: column;
-  height: 339px;
-  background-color: $white;
+  align-items: center;
+  height:150px;
 }
+
+
 
 
