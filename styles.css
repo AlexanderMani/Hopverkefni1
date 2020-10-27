@@ -197,8 +197,34 @@
     margin-left: 50%;
     margin-right: 50%; } }
 
-.prufa {
-  background-color: #fff; }
+@media (max-width: 650px) {
+  .hide-650 {
+    display: none; }
+  .full-650 {
+    width: 100%;
+    text-align: center; } }
+
+.offset-col-1-l {
+  margin-left: 8.33333%; }
+  @media (max-width: 1200px) {
+    .offset-col-1-l {
+      margin-left: 16.66667%;
+      margin-right: 16.66667%; } }
+  @media (max-width: 500px) {
+    .offset-col-1-l {
+      margin-left: 0;
+      margin-right: 0; } }
+
+.offset-col-1-r {
+  margin-right: 8.33333%; }
+  @media (max-width: 1200px) {
+    .offset-col-1-r {
+      margin-left: 8.33333%;
+      margin-right: 8.33333%; } }
+  @media (max-width: 500px) {
+    .offset-col-1-r {
+      margin-left: 0;
+      margin-right: 0; } }
 
 @media (max-width: 800px) {
   .uppskrift-titill,
@@ -221,7 +247,8 @@
   display: flex;
   flex-direction: column;
   height: 330px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.05); }
 
 .mynd-uppskrift-box {
   display: flex;
@@ -230,8 +257,7 @@
 .rammi {
   object-fit: cover;
   width: 100%;
-  height: 290px;
-  padding-top: 49.5px; }
+  height: 290px; }
 
 .rammi-video {
   object-fit: cover;
@@ -301,6 +327,21 @@
     .hlekkur-see {
       padding-right: 17px;
       padding-top: 2px; } }
+
+.latest-padding {
+  padding-bottom: 36px; }
+
+.margin-cards {
+  margin-top: 128px; }
+
+.video-recipes {
+  display: block; }
+
+@media (max-width: 800px) {
+  .mobile-middle-center {
+    text-align: center;
+    flex-direction: row;
+    justify-content: center; } }
 
 .hoffset {
   position: fixed;
@@ -472,8 +513,7 @@ body {
 
 main {
   padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 80px; }
+  padding-right: 15px; }
 
 .h {
   font-family: 'Playfair Display', serif;
@@ -553,19 +593,6 @@ p {
   @media (max-width: 500px) {
     .ingredients {
       font-size: 16px; } }
-  .ingredients::first-letter {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 0.5;
-    color: #e3cdb1;
-    font-size: 150%;
-    vertical-align: text-top;
-    padding-right: 10px; }
-    @media (max-width: 500px) {
-      .ingredients::first-letter {
-        font-size: 32px;
-        line-height: 18px; } }
 
 .ingredients-larger {
   font-family: 'Poppins', sans-serif;
@@ -588,15 +615,25 @@ p {
       font-size: 14px;
       line-height: 1.5; } }
 
+.ingredients-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #e3cdb1;
+  vertical-align: text-top;
+  padding-right: 10px; }
+  @media (max-width: 500px) {
+    .ingredients-number {
+      font-size: 32px;
+      line-height: 18px; } }
+
 hr {
   width: 100%;
   border: 0;
   height: 2px;
   background: #000;
   opacity: 0.1; }
-
-@media (max-width: 500px) {
-  visibility: hidden; }
 
 .n-c {
   font-family: 'Poppins', sans-serif;
@@ -712,6 +749,67 @@ li {
 
 ::placeholder {
   color: #525252; }
+
+.ingredients-text-2 {
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  color: #d0d0d0;
+  margin-bottom: -30px; }
+
+.ingredients-padding {
+  padding-right: 50px;
+  margin-left: 15px; }
+
+.ingredients-padding3 {
+  padding-right: 45px;
+  margin-left: 15px; }
+
+.ingredients-padding2 {
+  padding-top: 10px; }
+  @media (max-width: 500px) {
+    .ingredients-padding2 {
+      padding-top: 5px; } }
+
+.ingredients-padding4 {
+  margin-bottom: 20px; }
+
+.ingredients-padding5 {
+  margin-bottom: 42px; }
+
+.padding-forsida {
+  padding-bottom: 30px; }
+
+@media (max-width: 500px) {
+  .hide-mobile {
+    display: none; } }
+
+@media (max-width: 800px) {
+  .hide-mobile-plus {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .show-mobile {
+    display: block; } }
+
+@media (min-width: 501px) {
+  .show-mobile {
+    display: none; } }
+
+@media (max-width: 1200px) and (min-width: 801px) {
+  .hide-desktop {
+    display: none; } }
+
+.grey {
+  color: #d0d0d0;
+  padding-right: 10px;
+  padding-left: 15px; }
+
+.takki-padding {
+  padding-top: 50px;
+  padding-bottom: 53px; }
 
 :root {
   --offset: 15px;
@@ -906,6 +1004,15 @@ label {
   .eyebrow {
     text-align: center; } }
 
+.eyebrow2 {
+  margin-top: 80px; }
+  @media (max-width: 800px) {
+    .eyebrow2 {
+      text-align: start; } }
+  @media (max-width: 650px) {
+    .eyebrow2 {
+      text-align: center; } }
+
 @media (max-width: 800px) {
   .btn {
     margin-bottom: 20vh; } }
@@ -977,7 +1084,7 @@ label {
       flex-direction: column; } }
 
 .hero-video {
-  height: 650px;
+  height: 570px;
   background-image: url(../img//videobg.png); }
 
 .hero {
@@ -988,6 +1095,9 @@ label {
 
 .collie {
   width: 60%; }
+
+.all-recipes {
+  padding-bottom: 30px; }
 
 .recipe {
   display: flex;
@@ -1009,15 +1119,12 @@ label {
 .recipe-text {
   display: flex;
   flex-direction: column;
-  width: 1290px; }
+  padding-bottom: 180px; }
   .recipe-text .content {
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-top: 50px; }
-    .recipe-text .content p {
-      width: 850px;
-      height: 900px; }
 
 /*
   @media (max-width: $breakpoint1200) {
@@ -1031,7 +1138,10 @@ label {
 }
 */
 .checkbox {
-  padding-top: 58px; }
+  padding-top: 58px;
+  text-align: end;
+  position: relative;
+  top: 80px; }
 
 .checkbox input {
   height: 18px;
@@ -1056,6 +1166,28 @@ label {
   flex-direction: column;
   align-items: center;
   height: 150px; }
+  @media (max-width: 800px) {
+    .seemore-button {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px; } }
+
+.seemore-button2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70px; }
+  @media (max-width: 800px) {
+    .seemore-button2 {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px; } }
+
+.meginmal {
+  margin-top: 90px; }
+  @media (max-width: 800px) {
+    .meginmal {
+      margin-top: 30px; } }
 
 .see-more {
   margin-bottom: 100px; }
@@ -1126,7 +1258,6 @@ label {
 
 .video-description {
   
- 
 color: #9B9B9B;
 }
 

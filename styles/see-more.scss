@@ -5,18 +5,19 @@
 }
 
 .lina {
-  background: #E7E7E7;
+  background: #e7e7e7;
   height: 1px;
-  left: 0px;
+  left: 0;
   margin-top: 26px;
   top: 26px;
   width: 441px;
+
   @media (max-width: $breakpoint1200) {
     display: none;
   }
 }
 
-.sma-offset{
+.sma-offset {
   margin-left: 80px;
   margin-right: 80px;
 }

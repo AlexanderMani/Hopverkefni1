@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uppskriftir - Leit</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -18,8 +19,8 @@
             <div class="valmynd">
               <a class="navi valhlekkir" href="../index.html">Home</a>
               <a class="navi valhlekkir" href="recipe_index.html">Recipes</a>
-              <a class="navi valhlekkir" href="video.html">Videos</a>
-              <a class="navi valhlekkir" href="prufa.html">About</a>
+              <a class="navi valhlekkir" href="recipe_index.html">Videos</a>
+              <a class="navi valhlekkir" href="../index.html">About</a>
             </div>
             <label for="toggle"><div class="menu-btn">
               <div class="menu-btn-burger"></div>
@@ -29,7 +30,7 @@
       </div>
     </header2>
     <header id="myID" class="headerbackground hide">
-      <script src="../scroll.js"></script>
+      <script src="../javascript/scroll.js"></script>
       <div class="grid">
         <div class="row">
           <div class="hoffset header col col-12">
@@ -38,8 +39,8 @@
             <div class="valmynd">
               <a class="navi valhlekkir" href="../index.html">Home</a>
               <a class="navi valhlekkir" href="recipe_index.html">Recipes</a>
-              <a class="navi valhlekkir" href="video.html">Videos</a>
-              <a class="navi valhlekkir" href="prufa.html">About</a>
+              <a class="navi valhlekkir" href="recipe_index.html">Videos</a>
+              <a class="navi valhlekkir" href="../index.html">About</a>
             </div>
             <label for="toggle"><div class="menu-btn">
               <div class="menu-btn-burger"></div>
@@ -47,27 +48,25 @@
           </div>
         </div>
       </div>
-      <script src="../main.js"></script>
+      <script src="../javascript/main.js"></script>
     </header>
 
     <main>
       <div class="grid">
         <div class="row">
-          <div class="all-recipes col col-9">
-            <p class="n-c eyebrow">Get ready to get busy</p>
+          <div class="all-recipes col col-9 col-l-6 col-m-6 full-650">
+            <p class="n-c eyebrow2">Get ready to get busy</p>
             <h class="h title">All recipes</h>
           </div>
-          <div class="checkbox col col-3">
+          <div class="checkbox col col-3 col-l-6 col-m-6 hide-650">
             <form>
-              <input type="checkbox" id="show-video" name="show-video">
+              <input class="show-video" type="checkbox" name="show-video" value="1" onchange="valueChanged()">
               <label for="show-video">Only show video recipes</label>
             </form>
           </div>
         </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+        <div class="normal-recipes-card row">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/pumpkinpie.png" alt="">
@@ -75,12 +74,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/milkcookies.png" alt="">
@@ -88,28 +87,24 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/milk_cookies.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
-                <img class="rammi" src="../img/almondcookies.png" alt="">
+                <img class="rammi" src="../img/almond_cookies.png" alt="">
               </div>
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/almond_cookies.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/bananacake.png" alt="">
@@ -117,12 +112,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/banana_cake.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/laxsalad.png" alt="">
@@ -130,11 +125,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/lax_salad.html">Read more</a>
               </div>
             </div>
           </div>
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/cubecake.png" alt="">
@@ -142,15 +137,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/cube_cake.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/pumpkinpie.png" alt="">
@@ -158,12 +149,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/milkcookies.png" alt="">
@@ -171,28 +162,24 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/milk_cookies.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
-                <img class="rammi" src="../img/almondcookies.png" alt="">
+                <img class="rammi" src="../img/almond_cookies.png" alt="">
               </div>
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/almond_cookies.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/bananacake.png" alt="">
@@ -200,12 +187,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/banana_cake.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/laxsalad.png" alt="">
@@ -213,11 +200,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/lax_salad.html">Read more</a>
               </div>
             </div>
           </div>
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/cubecake.png" alt="">
@@ -225,15 +212,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/cube_cake.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/pumpkinpie.png" alt="">
@@ -241,12 +224,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/milkcookies.png" alt="">
@@ -254,28 +237,24 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/milk_cookies.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
-                <img class="rammi" src="../img/almondcookies.png" alt="">
+                <img class="rammi" src="../img/almond_cookies.png" alt="">
               </div>
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/almond_cookies.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/bananacake.png" alt="">
@@ -283,12 +262,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Banana cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/banana_cake.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/laxsalad.png" alt="">
@@ -296,11 +275,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Lax salad</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/lax_salad.html">Read more</a>
               </div>
             </div>
           </div>
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/cubecake.png" alt="">
@@ -308,15 +287,11 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Cube cake</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/cube_cake.html">Read more</a>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/pumpkinpie.png" alt="">
@@ -324,12 +299,12 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Pumpkin Pie</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/pumpkin_pie.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
                 <img class="rammi" src="../img/milkcookies.png" alt="">
@@ -337,34 +312,107 @@
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Milk cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/milk_cookies.html">Read more</a>
               </div>
             </div>
           </div>
 
-          <div class="col col-4 col-s-12 offset-col-s-2">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
             <div class="uppskrift-box">
               <div class="mynd-uppskrift-box">
-                <img class="rammi" src="../img/almondcookies.png" alt="">
+                <img class="rammi" src="../img/almond_cookies.png" alt="">
               </div>
               <h3 class="monthlink manudur">September</h2>
               <div class="titill-hlekkur">
                 <h2 class="cardh uppskrift-titill">Almond cookies</h3>
-                <a class="takki valhlekkir hlekkur-readmore" href="uppskriftir.html">Read more</a>
+                <a class="takki valhlekkir hlekkur-readmore" href="recipes/almond_cookies.html">Read more</a>
               </div>
             </div>
           </div>
         </div>
-
-
+        <div class="video-recipes-card row">
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
+            <div class="video-uppskrift-box">
+              <div class="mynd-video-uppskrift-box image-stack">
+                <div class="image-stack__item image-stack__item--bottom">
+                  <img class="rammi-video" src="../img/legumesprintaniers.png" alt="">
+                </div>
+                <div class="image-stack__item image-stack__item--top">
+                  <img class="play" src="../img/Play-Icon.svg" alt="">
+                </div>
+              </div>
+              <h3 class="monthlink manudur">August 2016</h3>
+              <div class="titill-hlekkur">
+                <h2 class="cardh video-uppskrift-titill">Legumes printaniers</h3>
+                <a class="takki valhlekkir hlekkur-see" href="uppskriftir.html">See</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
+            <div class="video-uppskrift-box">
+              <div class="mynd-video-uppskrift-box image-stack">
+                <div class="image-stack__item image-stack__item--bottom">
+                  <img class="rammi-video" src="../img/almondcookies.png" alt="">
+                </div>
+                <div class="image-stack__item image-stack__item--top">
+                  <img class="play" src="../img/Play-Icon.svg" alt="">
+                </div>
+              </div>
+              <h3 class="monthlink manudur">August 2016</h3>
+              <div class="titill-hlekkur">
+                <h2 class="cardh video-uppskrift-titill">Blossoming cookie</h3>
+                <a class="takki valhlekkir hlekkur-see" href="uppskriftir.html">See</a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-4 col-l-6 col-m-12 offset-col-m-1 col-s-12 offset-col-s-1">
+            <div class="video-uppskrift-box">
+              <div class="mynd-video-uppskrift-box image-stack">
+                <div class="image-stack__item image-stack__item--bottom">
+                  <img class="rammi-video" src="../img/blueberrypie.png" alt="">
+                </div>
+                <div class="image-stack__item image-stack__item--top">
+                  <img class="play" src="../img/Play-Icon.svg" alt="">
+                </div>
+              </div>
+              <h3 class="monthlink manudur">August 2016</h2>
+              <div class="titill-hlekkur">
+                <h2 class="cardh video-uppskrift-titill">Blueberry Pie</h2>
+                <a class="takki valhlekkir hlekkur-see" href="uppskriftir.html">See</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="takki-padding">
+        <div class="grid">
+        <div class="row">
+          <div class="hide-mobile-plus col col-4 col-s-0">
+            <div class="line-hr">
+              <hr />
+            </div>
+          </div>
+          <div class="seemore-button2 col col-4 col-s-0">
+            <button class="sub-button">
+            <a class="takki" href="recipe_index.html">See More</a></button>
+          </div>
+          <div class="hide-mobile-plus col col-4 col-s-0">
+            <div class="line-hr">
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <script src="../javascript/show-recipes.js"></script>
     </main>
 
     <footer>
       <div class="newsletterbox padding">
         <div class="nl grid">
           <div class="nl row">
-            <div class="subscribe2 col col-6 col-s-12 col-l-9 col-m-12">
+            <div class="subscribe2 col col-6 col-s-12 col-l-9 col-m-6">
               <p class="n-c desktop">Craving more?</p>
               <p class="n-c mobile">All the news are here</p>
               <h class="newsletterh">Subscribe to our newsletter</h>

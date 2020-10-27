@@ -14,7 +14,6 @@ body {
 main {
   padding-left: $offset;
   padding-right: $offset;
-  padding-top: 80px;
 }
 
 //Main heading á síðunni
@@ -104,7 +103,6 @@ p {
   }
 }
 
-
 //Ingredients (first number targeted)
 .ingredients {
   font-family: 'Poppins', sans-serif;
@@ -113,70 +111,59 @@ p {
   line-height: $lheight-18d2;
   color: $beige-grey-text;
 
-    @media (max-width: $breakpoint500) {
+  @media (max-width: $breakpoint500) {
     font-size: $size-16;
-    }
-
-    &::first-letter {
-      font-family: 'Playfair Display', serif;
-      font-size: $size-36;
-      font-weight: $thick;
-      line-height: $lheight-36;
-      color: $beige;
-      font-size: 150%;
-      vertical-align: text-top;
-      padding-right:10px;
-
-
-      @media (max-width: $breakpoint500) {
-        font-size: $size-32;
-        line-height: $lheight-32-2;
-      }
-    }
   }
+}
 
-  .ingredients-larger{
-    font-family: 'Poppins', sans-serif;
-    font-weight: $super-thin;
-    font-size: $size-40;
-    line-height: $lheight-32;
-    color: $beige-grey-text;
-
-
-      @media (max-width: $breakpoint500) {
-      font-size: $size-16;
-      }
-
-    }
-
-    .ingredients-heading {
-      font-family: 'Poppins', sans-serif;
-      font-size: $size-18;
-      font-weight: $thin;
-      line-height: $lheight-18d2;
-      color: $black;
-
-      @media (max-width: $breakpoint500) {
-        font-size: $size-14;
-        line-height: $lheight-0;
-      }
-    }
-  //horizontal line for See More button
-
-  hr {
-    width: 100%;
-    border: 0;
-    height: 2px;
-    background: #000;
-    opacity: 0.1;
-
-  }
+.ingredients-larger {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $super-thin;
+  font-size: $size-40;
+  line-height: $lheight-32;
+  color: $beige-grey-text;
 
   @media (max-width: $breakpoint500) {
-    visibility: hidden;
+    font-size: $size-16;
   }
+}
 
+.ingredients-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: $size-18;
+  font-weight: $thin;
+  line-height: $lheight-18d2;
+  color: $black;
 
+  @media (max-width: $breakpoint500) {
+    font-size: $size-14;
+    line-height: $lheight-0;
+  }
+}
+
+.ingredients-number {
+  font-family: 'Playfair Display', serif;
+  font-size: $size-30r;
+  font-weight: $thick;
+  line-height: $lheight-30;
+  color: $beige;
+  vertical-align: text-top;
+  padding-right: 10px;
+
+  @media (max-width: $breakpoint500) {
+    font-size: $size-32;
+    line-height: $lheight-32-2;
+  }
+}
+//horizontal line for See More button
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background: #000;
+  opacity: 0.1;
+}
 
 //Newsletter - Craving more? & email
 .n-c {
@@ -325,12 +312,89 @@ button:focus a {
   align-items: center;
 }
 
-
-
 li {
   list-style-type: none;
 }
 
 ::placeholder {
   color: $dark-grey-text;
+}
+
+.ingredients-text-2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  color: $light-grey-text;
+  margin-bottom: -30px;
+}
+
+.ingredients-padding {
+  padding-right: 50px;
+  margin-left: 15px;
+}
+
+.ingredients-padding3 {
+  padding-right: 45px;
+  margin-left: 15px;
+}
+
+.ingredients-padding2 {
+  padding-top: 10px;
+
+  @media (max-width: $breakpoint500) {
+    padding-top: 5px;
+  }
+}
+
+.ingredients-padding4 {
+  margin-bottom: 20px;
+}
+
+.ingredients-padding5 {
+  margin-bottom: 42px;
+}
+
+.padding-forsida {
+  padding-bottom: 30px;
+}
+
+.hide-mobile {
+  @media (max-width: $breakpoint500) {
+    display: none;
+  }
+}
+
+.hide-mobile-plus {
+  @media (max-width: $breakpoint800) {
+    display: none;
+  }
+}
+
+.show-mobile {
+  @media (max-width: $breakpoint500) {
+    display: block;
+  }
+
+  @media (min-width: $breakpoint500+1) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media (max-width: $breakpoint1200) and (min-width: $breakpoint800+1) {
+    display: none;
+  }
+}
+
+.grey {
+  color: $light-grey-text;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+.takki-padding {
+  padding-top: 50px;
+  padding-bottom: 53px;
 }
