@@ -9,7 +9,7 @@ Group project no. 1 for TÖL107 2020
 Verkefnið fjallar um blablalba
 
 ## Table of contents
-[Nafn](#töl-107-group-project) <br/ > 
+[Nafn](#töl-107-group-project) <br /> 
 [Authors](#authors) 
   [About](#about) 
   [Installation](#installation) 
