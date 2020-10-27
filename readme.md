@@ -20,6 +20,11 @@ Verkefnið fjallar um blablalba
 [Contribution](#contribution) <br /> 
 [License](#license)
 
+* Item 1
+* Item 2
+ * Item 2a
+ * Item 2b
+
 ## Installation
 
 ## Usage
