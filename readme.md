@@ -11,7 +11,7 @@ Verkefnið fjallar um blablalba
 ## Table of contents
 > [Nafn](#töl-107-group-project)
 
->   [Authors](#authors)
+>     [Authors](#authors)
 
 >   [About](#about)
 
