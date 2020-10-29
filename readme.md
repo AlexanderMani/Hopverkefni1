@@ -13,7 +13,7 @@ Hópverkefni 1 í TÖL107 haust 2020
 * Alexander
 * Árni
 * Ingibjörg Salvör Pálsdóttir isp2@hi.is
-* Tinna
+* Tinna Hallsdóttir tih20@hi.is
 
 ## Um verkefni
 Verkefnið fólst í því að smíða vef eftir forskrift og hönnun sem gefin var í Figma.
