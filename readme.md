@@ -30,7 +30,7 @@ Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól þurfa að ve
 * stylelint-config-standard 20.0.0
 
 ## Notkun
-Almenn notkun:
+Almenn notkun, kveikir á browser-sync og fylgist með sass uppfærslum:
 ```
 npm run dev
 ```
