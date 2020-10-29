@@ -49,14 +49,9 @@
 
 .play {
   height: 230px;
-  width: 30px;
-  position: relative;
-  left: 0;
-  right: 0;
+  width: 100%;
   display: none;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  object-fit: cover;
 }
 
 .mynd-video-uppskrift-box {
