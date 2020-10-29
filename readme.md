@@ -22,9 +22,18 @@ Allt efni, litir, stærði o.s.fr var tekið úr Figma skjali.
 
 ## Uppsetning
 Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól þurfa að vera sett upp með npm:
-* browser-sync
-* 
+* browser-sync 2.26.13
+* concurrently 5.3.0
+* node-sass 4.14.1
+* stylelint 13.7.2
+* stylelint-config-sass-guidelines 7.1.0
+* stylelint-config-standard 20.0.0
 
 ## Notkun
+
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
 npm run dev
 npm run lint
