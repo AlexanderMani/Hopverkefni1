@@ -6,7 +6,7 @@
 
   @media (max-width: $breakpoint800) {
     background: linear-gradient($white 3.5%, $light-grey 3.5%);
-    }
+  }
 }
 
 .grey-background-index-2 {
@@ -15,7 +15,7 @@
 
   @media (max-width: $breakpoint800) {
     background: linear-gradient($white 20%, $light-grey 20%);
-    }
+  }
 }
 
 .grey-background-videos {
@@ -24,7 +24,7 @@
 
   @media (max-width: $breakpoint800) {
     background: linear-gradient($white 18%, $light-grey 18%);
-    }
+  }
 }
 
 .grey-background-recipes {
@@ -33,7 +33,7 @@
 
   @media (max-width: $breakpoint800) {
     background: linear-gradient($white 18%, $light-grey 18%);
-    }
+  }
 }
 
 .grey-background-videorecipes {
@@ -41,6 +41,6 @@
   display: block;
 
   @media (max-width: $breakpoint800) {
-  background: linear-gradient($white 18%, $light-grey 18%);
+    background: linear-gradient($white 18%, $light-grey 18%);
   }
 }

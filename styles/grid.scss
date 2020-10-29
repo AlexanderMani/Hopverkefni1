@@ -31,14 +31,18 @@
 }
 
 // for loopa - býr til col klasa. col-1 spannar einn dálk af 12 eða c.a. 8.7% width. col-12 spannar 100% width.
+/* stylelint-disable */
 @for $i from 1 through 12 {
+  /* stylelint-enable */
   .col-#{$i} {
     width: percentage($i / 12);
   }
 }
 
 // Offset ef þú vilt láta textann byrja annarsstaðar en lengst til vinstri. Tölurnar táknar fjölda dálka.
+/* stylelint-disable */
 @for $i from 1 through 6 {
+/* stylelint-enable */
   .offset-col-#{$i} {
     margin-left: percentage($i / 12);
     margin-right: percentage($i /12);
@@ -46,13 +50,17 @@
 }
 // Sama og fyrir ofan nema fyrir mobile.
 @media (max-width: $breakpoint500) {
+  /* stylelint-disable */
   @for $i from 1 through 12 {
+    /* stylelint-enable */
     .col-s-#{$i} {
       width: percentage($i / 12);
     }
   }
 
+  /* stylelint-disable */
   @for $i from 1 through 2 {
+    /* stylelint-enable */
     .offset-col-s-#{$i} {
       margin-left: percentage($i / 12);
       margin-right: percentage($i /12);
@@ -62,13 +70,17 @@
 
 //Fyrir 500-800px view.
 @media (max-width: $breakpoint800) and (min-width: $breakpoint500) {
+  /* stylelint-disable */
   @for $i from 1 through 12 {
+    /* stylelint-enable */
     .col-m-#{$i} {
       width: percentage($i / 12);
     }
   }
 
+  /* stylelint-disable */
   @for $i from 1 through 6 {
+  /* stylelint-enable */
     .offset-col-m-#{$i} {
       margin-left: percentage($i / 12);
       margin-right: percentage($i /12);
@@ -78,13 +90,16 @@
 
 // Fyrir 800-1200px view.
 @media (max-width: $breakpoint1200) and (min-width: $breakpoint800 + 1px) {
+  /* stylelint-disable */
   @for $i from 1 through 12 {
+    /* stylelint-enable */
     .col-l-#{$i} {
       width: percentage($i / 12);
     }
   }
-
+  /* stylelint-disable */
   @for $i from 1 through 6 {
+  /* stylelint-enable */
     .offset-col-l-#{$i} {
       margin-left: percentage($i / 12);
       margin-right: percentage($i /12);
