@@ -62,12 +62,13 @@
   width: 20px;
 }
 
-.checkbox label {
+.label-checkbox {
   display: inline;
   font-family: 'Playfair Display', sans-serif;
   font-size: $size-22;
   font-weight: $thick;
-  line-height: $lheight-40;
+  position: relative;
+  top: -15px;
 }
 
 .line-hr {
