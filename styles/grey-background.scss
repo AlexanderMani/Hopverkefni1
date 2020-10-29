@@ -1,0 +1,46 @@
+@import 'config.scss';
+
+.grey-background-index {
+  background: linear-gradient($white 10%, $light-grey 10%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+    background: linear-gradient($white 3.5%, $light-grey 3.5%);
+    }
+}
+
+.grey-background-index-2 {
+  background: linear-gradient($white 25%, $light-grey 25%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+    background: linear-gradient($white 20%, $light-grey 20%);
+    }
+}
+
+.grey-background-videos {
+  background: linear-gradient($white 35%, $light-grey 35%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+    background: linear-gradient($white 18%, $light-grey 18%);
+    }
+}
+
+.grey-background-recipes {
+  background: linear-gradient($white 35%, $light-grey 35%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+    background: linear-gradient($white 18%, $light-grey 18%);
+    }
+}
+
+.grey-background-videorecipes {
+  background: linear-gradient($white 35%, $light-grey 35%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+  background: linear-gradient($white 18%, $light-grey 18%);
+  }
+}
