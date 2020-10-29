@@ -11,7 +11,7 @@ Hópverkefni 1 í TÖL107 haust 2020
 
 ## Höfundar
 * Alexander
-* Árni
+* Árni Þór Sörensen ats30@hi.is
 * Ingibjörg Salvör Pálsdóttir isp2@hi.is
 * Tinna Hallsdóttir tih20@hi.is
 
