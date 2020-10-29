@@ -9,6 +9,15 @@
   }
 }
 
+.grey-background-index-checked {
+  background: linear-gradient($white 50%, $light-grey 50%);
+  display: block;
+
+  @media (max-width: $breakpoint800) {
+    background: linear-gradient($white 25%, $light-grey 25%);
+  }
+}
+
 .grey-background-index-2 {
   background: linear-gradient($white 25%, $light-grey 25%);
   display: block;
