@@ -30,10 +30,11 @@ Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól þurfa að ve
 * stylelint-config-standard 20.0.0
 
 ## Notkun
-
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
+Almenn notkun:
 ```
 npm run dev
+```
+Til að keyra lint:
+```
 npm run lint
+```
