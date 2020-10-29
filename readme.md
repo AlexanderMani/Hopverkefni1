@@ -1,37 +1,25 @@
-# TÖL 107 Group project
-Group project no. 1 for TÖL107 2020
+# TÖL 107 Hópverkefni
+Hópverkefni 1 í TÖL107 haust 2020
 ***
+## Efnisyfirlit
+* [Nafn](#töl-107-hópverkefni) <br /> 
+* [Efnisyfirlit](#efnisyfirlit) <br />
+* [Höfundar](#höfundar) <br /> 
+* [Um verkefni](#um-verkefni) <br /> 
+* [Uppsetning](#uppsetning) <br /> 
+* [Notkun](#notkun) <br /> 
+* [Contribution](#contribution) <br /> 
 
-## Authors
+## Höfundar
 * Alexander
 * Árni
 * Ingibjörg Salvör Pálsdóttir isp2@hi.is
 * Tinna
 
-## About
-Verkefnið fjallar um blablalba
+## Um verkefni
 
-## Table of contents
-* [Name](#töl-107-group-project) <br /> 
-* [Authors](#authors) <br /> 
-* [About](#about) <br /> 
-* [Installation](#installation) <br /> 
-* [Usage](#usage) <br /> 
-  + [Features](#features) <br /> 
-* [Issues](#issues) <br /> 
-* [Contribution](#contribution) <br /> 
-* [License](#license)
-
-## Installation
+## Uppsetning
 
 ## Usage
-
-### Features
-
-## Eitthvað meira
-
-## Issues
-
-## Contribution
-
-## License
+npm run dev
+npm run lint
