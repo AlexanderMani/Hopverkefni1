@@ -8,7 +8,6 @@ Hópverkefni 1 í TÖL107 haust 2020
 * [Um verkefni](#um-verkefni) <br /> 
 * [Uppsetning](#uppsetning) <br /> 
 * [Notkun](#notkun) <br /> 
-* [Contribution](#contribution) <br /> 
 
 ## Höfundar
 * Alexander
@@ -17,9 +16,15 @@ Hópverkefni 1 í TÖL107 haust 2020
 * Tinna
 
 ## Um verkefni
+Verkefnið fólst í því að smíða vef eftir forskrift og hönnun sem gefin var í Figma.
+
+Allt efni, litir, stærði o.s.fr var tekið úr Figma skjali.
 
 ## Uppsetning
+Hægt er að klóna verkefnið og keyra locally. Eftirfarandi tól þurfa að vera sett upp með npm:
+* browser-sync
+* 
 
-## Usage
+## Notkun
 npm run dev
 npm run lint
