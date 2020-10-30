@@ -10,7 +10,7 @@ Hópverkefni 1 í TÖL107 haust 2020
 * [Notkun](#notkun) <br /> 
 
 ## Höfundar
-* Alexander
+* Alexander Máni Gautason amg62@hi.is
 * Árni Þór Sörensen ats30@hi.is
 * Ingibjörg Salvör Pálsdóttir isp2@hi.is
 * Tinna Hallsdóttir tih20@hi.is
